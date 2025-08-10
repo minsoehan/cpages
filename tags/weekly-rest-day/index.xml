@@ -94,6 +94,16 @@
  &lt;/tr>
 &lt;/table>
 &lt;hr class="horizontal-divider-two">
+&lt;h3 id="weekly-rest-day-with-wages">အခကြေးငွေ သို့မဟုတ် လစာငွေအပြည့်ဖြင့် ခွင့်ပြုပေးရခြင်း&lt;i class="fa-solid fa-link">&lt;/i>&lt;/h3>
+&lt;table class="list">
+ &lt;caption>၁၉၅၁ ခုနှစ်၊ ခွင့်ရက်နှင့် အလုပ်ပိတ်ရက် အက်ဥပဒေ&lt;/caption>
+ &lt;tr>
+ &lt;td>၃။&lt;/td>
+ &lt;td>(၄)&lt;/td>
+ &lt;td>အလုပ်ရှင်သည် အလုပ်သမားများအတွက် ရက်သတ္တတစ်ပတ်လျှင် အနည်းဆုံးတစ်ရက်ကို အခကြေးငွေ သို့မဟုတ် လစာငွေအပြည့်ဖြင့် အလုပ်ပိတ်ရက်အဖြစ် သတ်မှတ်၍ ခွင့်ပြုပေးရမည်။&lt;/td>
+ &lt;/tr>
+&lt;/table>
+&lt;hr class="horizontal-divider-two">
 &lt;h3 id="wages-for-weekly-rest-day">ရက်သတ္တပတ် သတ်မှတ်အလုပ်ချိန် ပြည့်အောင်လုပ်ခဲ့ပြီးဖြစ်လျှင် ရက်သတ္တပတ် အလုပ်ပိတ်ရက်အတွက် အခကြေးငွေ ပေးရခြင်း&lt;i class="fa-solid fa-link">&lt;/i>&lt;/h3>
 &lt;table class="list">
  &lt;caption>ခွင့်ရက်နှင့် အလုပ်ပိတ်ရက် နည်းဥပဒေများ&lt;/caption>
