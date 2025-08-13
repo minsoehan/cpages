@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dash on Min Soe Han</title><link>https://minsoehan.com/tags/dash/</link><description>Recent content in Dash on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 13 Aug 2025 10:54:07 +0630</lastBuildDate><atom:link href="https://minsoehan.com/tags/dash/index.xml" rel="self" type="application/rss+xml"/><item><title>Controlling Running a Script</title><link>https://minsoehan.com/tech/controlling-running-a-script/</link><pubDate>Wed, 13 Aug 2025 10:54:07 +0630</pubDate><guid>https://minsoehan.com/tech/controlling-running-a-script/</guid><description>&lt;p>We often need to run our script avoiding certain situations like the followings.&lt;/p>
+&lt;ol>
+&lt;li>Avoiding running a script as ROOT.&lt;/li>
+&lt;li>Avoiding running a script in background.&lt;/li>
+&lt;li>Avoiding running a script if the script is already running.&lt;/li>
+&lt;li>Avoiding unnecessary remains exist.&lt;/li>
+&lt;/ol>
+&lt;p class="space-one"> &lt;/p>
+&lt;h3 id="avoiding-running-a-script-as-root">Avoiding running a script as ROOT&lt;/h3>
+&lt;p>It is undesirable if a script was accidentally run as ROOT while the script is supposed to be run as normal user. To avoid this situation:&lt;/p></description></item></channel></rss>
