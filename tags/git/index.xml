@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on Min Soe Han</title><link>https://minsoehan.com/tags/git/</link><description>Recent content in Git on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 13 Aug 2025 12:56:29 +0630</lastBuildDate><atom:link href="https://minsoehan.com/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Git Rebase</title><link>https://minsoehan.com/tech/git-rebase/</link><pubDate>Wed, 13 Aug 2025 12:56:29 +0630</pubDate><guid>https://minsoehan.com/tech/git-rebase/</guid><description>&lt;img src="https://minsoehan.com/tech/git-rebase/git-rebase-3.jpg" width="1058" height="595" alt="git rebase" class="image-style-one" loading="loading...">
+ 
+
+
+&lt;p class="space-one"> &lt;/p>
+&lt;p>In the following scenario, the safest option is using &lt;code>git pull --rebase&lt;/code> or setting configuration by &lt;code>git config pull.rebase true&lt;/code>.&lt;/p>
+&lt;h3 id="analysis-of-the-scenario">Analysis of the scenario&lt;/h3>
+&lt;ol>
+&lt;li>Current state on Remote:&lt;br>
+file &lt;em>aaa.txt&lt;/em> exits and file &lt;em>bbb.txt&lt;/em> does not exist yet.&lt;/li>
+&lt;li>Current state on Local:&lt;br>
+file &lt;em>aaa.txt&lt;/em> does not exist and file &lt;em>bbb.txt&lt;/em> has been created.&lt;/li>
+&lt;/ol>
+&lt;p>In above scenario and local repository on the computer, git push will fail with the following message:&lt;/p></description></item></channel></rss>

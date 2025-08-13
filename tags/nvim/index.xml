@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nvim on Min Soe Han</title><link>https://minsoehan.com/tags/nvim/</link><description>Recent content in Nvim on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 13 Aug 2025 13:33:08 +0630</lastBuildDate><atom:link href="https://minsoehan.com/tags/nvim/index.xml" rel="self" type="application/rss+xml"/><item><title>My Neovim Setup</title><link>https://minsoehan.com/tech/my-nvim-setup/</link><pubDate>Wed, 13 Aug 2025 13:33:08 +0630</pubDate><guid>https://minsoehan.com/tech/my-nvim-setup/</guid><description>&lt;p>&lt;a href="https://neovim.io/" target="_blank" rel="noopener noreferrer">
+ Neovim
+&lt;/a>
+ is a fork of &lt;a href="https://www.vim.org/" target="_blank" rel="noopener noreferrer">
+ 
+&lt;/a>
+ aiming to improve the codebase, allowing for easier implementation of APIs, improved user experience and plugin implementation.&lt;/p>
+&lt;h3 id="setting-up-neovim">Setting up Neovim&lt;/h3>
+&lt;p>This is my neovim setup of personal preference. The setup or configuration is all included in &lt;code>~/.config/nvim/init.lua&lt;/code> file. Except native user settings, the following plugins are installed:&lt;/p>
+&lt;ol>
+&lt;li>&lt;a href="https://github.com/savq/paq-nvim" target="_blank" rel="noopener noreferrer">
+ savq/paq-nvim
+&lt;/a>
+ plugin manager written in Lua.&lt;/li>
+&lt;li>&lt;a href="https://github.com/hrsh7th/nvim-cmp" target="_blank" rel="noopener noreferrer">
+ hrsh7th/nvim-cmp
+&lt;/a>
+ auto-completion.&lt;/li>
+&lt;li>&lt;a href="https://github.com/neovim/nvim-lspconfig" target="_blank" rel="noopener noreferrer">
+ neovim/nvim-lspconfig
+&lt;/a>
+ language server protocol (LSP).&lt;/li>
+&lt;li>&lt;a href="https://github.com/L3MON4D3/LuaSnip" target="_blank" rel="noopener noreferrer">
+ L3MON4D3/LuaSnip
+&lt;/a>
+ snippet engine.&lt;/li>
+&lt;li>&lt;a href="https://github.com/rafamadriz/friendly-snippets" target="_blank" rel="noopener noreferrer">
+ rafamadriz/friendly-snippets
+&lt;/a>
+ snippets.&lt;/li>
+&lt;li>&lt;a href="https://github.com/nvim-treesitter/nvim-treesitter" target="_blank" rel="noopener noreferrer">
+ nvim-treesitter/nvim-treesitter
+&lt;/a>
+ treesitter for better syntax highlighting colors.&lt;/li>
+&lt;li>&lt;a href="https://github.com/marko-cerovac/material.nvim" target="_blank" rel="noopener noreferrer">
+ marko-cerovac/material.nvim
+&lt;/a>
+ material colorscheme.&lt;/li>
+&lt;li>&lt;a href="https://github.com/nvim-telescope/telescope.nvim" target="_blank" rel="noopener noreferrer">
+ nvim-telescope/telescope.nvim
+&lt;/a>
+ telescope search tool.&lt;/li>
+&lt;li>&lt;a href="https://github.com/nvim-tree/nvim-tree.lua" target="_blank" rel="noopener noreferrer">
+ nvim-tree/nvim-tree.lua
+&lt;/a>
+ side bar file explorer.&lt;/li>
+&lt;li>&lt;a href="https://github.com/nvimdev/indentmini.nvim" target="_blank" rel="noopener noreferrer">
+ nvimdev/indentmini.nvim
+&lt;/a>
+ indent line.&lt;/li>
+&lt;li>&lt;a href="https://github.com/windwp/nvim-ts-autotag" target="_blank" rel="noopener noreferrer">
+ windwp/nvim-ts-autotag
+&lt;/a>
+ autoclose and autorename html tag.&lt;/li>
+&lt;/ol>
+&lt;p>The above plugins are not all plugins required because most of them require other plugins as dependencies. For example, &lt;a href="https://github.com/hrsh7th/nvim-cmp" target="_blank" rel="noopener noreferrer">
+ nvim-cmp
+&lt;/a>
+ requires the followings:&lt;/p></description></item></channel></rss>
