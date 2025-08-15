@@ -207,7 +207,7 @@
  &lt;/tr>
 &lt;/table>
 &lt;hr class="horizontal-divider-two">
-&lt;h3 id="ammending-the-decision">ဆုံးဖြတ်ချက်ကို ရက်ပေါင်း ၉၀ ကျော်ပါက ပြင်ဆင်နိုင်ခြင်း&lt;i class="fa-solid fa-link">&lt;/i>&lt;i class="fa-solid fa-link">&lt;/i>&lt;/h3>
+&lt;h3 id="ammending-the-decision">ဆုံးဖြတ်ချက်ကို ရက်ပေါင်း ၉၀ ကျော်ပါက ပြင်ဆင်နိုင်ခြင်း&lt;i class="fa-solid fa-link">&lt;/i>&lt;/h3>
 &lt;table class="list">
  &lt;caption>အလုပ်သမားရေးရာ အငြင်းပွားမှုဖြေရှင်းရေး ဥပဒေ၊ အခန်း (၇)&lt;/caption>
  &lt;tr>
@@ -216,7 +216,7 @@
  &lt;/tr>
 &lt;/table>
 &lt;hr class="horizontal-divider-two">
-&lt;h3 id="persons-to-follow-the-decision">&lt;i class="fa-solid fa-link">ဆုံးဖြတ်ချက်ကို လိုက်နာရမည့် ပုဂ္ဂိုလ်များ&lt;/i>&lt;i class="fa-solid fa-link">&lt;/i>&lt;/h3>
+&lt;h3 id="persons-to-follow-the-decision">ဆုံးဖြတ်ချက်ကို လိုက်နာရမည့် ပုဂ္ဂိုလ်များ&lt;i class="fa-solid fa-link">&lt;/i>&lt;/h3>
 &lt;table class="list large-margin-bottom">
  &lt;caption>အလုပ်သမားရေးရာ အငြင်းပွားမှုဖြေရှင်းရေး ဥပဒေ၊ အခန်း (၇)&lt;/caption>
  &lt;tr>
@@ -241,14 +241,29 @@
 &lt;/table>
 
 &lt;div style="background-color: lightyellow; color: black; border: 1px solid gray; padding: 0.5rem; border-radius: 3px;" data-pagefind-ignore>
- &lt;p style="margin: 0;">အများပြည်သူသိရှိနိုင်ရန် သက်ဆိုင်ရာမှ ထုတ်ပြန်ထားသည်ကို အများအကျိုးရှိစေခြင်းငှာ ကူးယူဖော်ပြခြင်းဖြစ်ပါသည်။ စာလုံးအကျအပေါက်၊ သတ်ပုံအမှားအယွင်း၊ အဓိပ္ပါယ်လွဲချော်မှုနှင့် update မဖြစ်သည်များ ရှိနိုင်ပါသည်။ တွေ့ရှိပါက ဆက်သွယ်အကြောင်းကြားပေးပါရန် မေတ္တာရပ်ခံအပ်ပါသည်။&lt;/p></description></item><item><title>Arch Linux Installation</title><link>https://minsoehan.com/tech/arch-installation/</link><pubDate>Thu, 14 Aug 2025 10:56:15 +0630</pubDate><guid>https://minsoehan.com/tech/arch-installation/</guid><description>&lt;p>Arch linux installation is not that hard if you do it simple as if:&lt;/p>
+ &lt;p style="margin: 0;">အများပြည်သူသိရှိနိုင်ရန် သက်ဆိုင်ရာမှ ထုတ်ပြန်ထားသည်ကို အများအကျိုးရှိစေခြင်းငှာ ကူးယူဖော်ပြခြင်းဖြစ်ပါသည်။ စာလုံးအကျအပေါက်၊ သတ်ပုံအမှားအယွင်း၊ အဓိပ္ပါယ်လွဲချော်မှုနှင့် update မဖြစ်သည်များ ရှိနိုင်ပါသည်။ တွေ့ရှိပါက ဆက်သွယ်အကြောင်းကြားပေးပါရန် မေတ္တာရပ်ခံအပ်ပါသည်။&lt;/p></description></item><item><title>Arch Linux Installation</title><link>https://minsoehan.com/tech/arch-installation/</link><pubDate>Thu, 14 Aug 2025 10:56:15 +0630</pubDate><guid>https://minsoehan.com/tech/arch-installation/</guid><description>&lt;p>&lt;a href="https://archlinux.org/" target="_blank" rel="noopener noreferrer">
+ Arch linux
+&lt;/a>
+ installation is not that hard if you do it simple as if:&lt;/p>
 &lt;ul>
 &lt;li>you don&amp;rsquo;t need dual boot and just want to install it as first OS on your drive.&lt;/li>
-&lt;li>your computer is not too old and it supports GPT, UEFI, etc.&lt;/li>
-&lt;li>you don&amp;rsquo;t need LVM, system encryption or RAID.&lt;/li>
+&lt;li>your computer is not too old and it supports &lt;a href="https://wiki.archlinux.org/title/Partitioning#GUID_Partition_Table" target="_blank" rel="noopener noreferrer">
+ GPT
+&lt;/a>
+, &lt;a href="https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface" target="_blank" rel="noopener noreferrer">
+ UEFI
+&lt;/a>
+, etc.&lt;/li>
+&lt;li>you don&amp;rsquo;t need LVM, system encryption or &lt;a href="https://wiki.archlinux.org/title/RAID" target="_blank" rel="noopener noreferrer">
+ RAID
+&lt;/a>
+.&lt;/li>
 &lt;li>you don&amp;rsquo;t mind to read the wiki pages.&lt;/li>
 &lt;/ul>
-&lt;p>If so, it is done in 10 minutes (without downloading and installation time). In this tutorial, The Arch Linux is installed as&lt;/p></description></item><item><title>My Neovim Setup</title><link>https://minsoehan.com/tech/my-nvim-setup/</link><pubDate>Wed, 13 Aug 2025 13:33:08 +0630</pubDate><guid>https://minsoehan.com/tech/my-nvim-setup/</guid><description>&lt;p>&lt;a href="https://neovim.io/" target="_blank" rel="noopener noreferrer">
+&lt;p>See also: &lt;a href="https://wiki.archlinux.org/title/Installation_guide" target="_blank" rel="noopener noreferrer">
+ Official Installation Guide
+&lt;/a>
+&lt;/p></description></item><item><title>My Neovim Setup</title><link>https://minsoehan.com/tech/my-nvim-setup/</link><pubDate>Wed, 13 Aug 2025 13:33:08 +0630</pubDate><guid>https://minsoehan.com/tech/my-nvim-setup/</guid><description>&lt;p>&lt;a href="https://neovim.io/" target="_blank" rel="noopener noreferrer">
  Neovim
 &lt;/a>
  is a fork of &lt;a href="https://www.vim.org/" target="_blank" rel="noopener noreferrer">
