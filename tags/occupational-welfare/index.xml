@@ -114,7 +114,7 @@
 &lt;/table>
 &lt;hr class="horizontal-divider-two">
 &lt;h3 id="power-to-add-supplements">ဤအခန်းကို ဖြည့်စွက်ရန် နည်းဥပဒေများ ပြုနိုင်သည့် အလုပ်သမား၊ အလုပ်အကိုင်နှင့် လူမှုဖူလုံရေးဝန်ကြီးဌာန၏ အာဏာ&lt;i class="fa-solid fa-link">&lt;/i>&lt;/h3>
-&lt;table class="list">
+&lt;table class="list large-margin-bottom">
  &lt;tr>
  &lt;td>၅၁။&lt;/td>
  &lt;td>(၁)&lt;/td>
@@ -122,4 +122,5 @@
  &lt;/tr>
 &lt;/table>
 
-&lt;p>&amp;nbsp;&lt;/p></description></item></channel></rss>
+&lt;div style="background-color: lightyellow; color: black; border: 1px solid gray; padding: 0.5rem; border-radius: 3px;" data-pagefind-ignore>
+ &lt;p style="margin: 0;">အများပြည်သူသိရှိနိုင်ရန် သက်ဆိုင်ရာမှ ထုတ်ပြန်ထားသည်ကို အများအကျိုးရှိစေခြင်းငှာ ကူးယူဖော်ပြခြင်းဖြစ်ပါသည်။ စာလုံးအကျအပေါက်၊ သတ်ပုံအမှားအယွင်း၊ အဓိပ္ပါယ်လွဲချော်မှုနှင့် update မဖြစ်သည်များ ရှိနိုင်ပါသည်။ တွေ့ရှိပါက ဆက်သွယ်အကြောင်းကြားပေးပါရန် မေတ္တာရပ်ခံအပ်ပါသည်။&lt;/p></description></item></channel></rss>
