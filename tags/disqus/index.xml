@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Disqus on Min Soe Han</title><link>https://minsoehan.com/tags/disqus/</link><description>Recent content in Disqus on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 09 Aug 2025 10:29:36 +0630</lastBuildDate><atom:link href="https://minsoehan.com/tags/disqus/index.xml" rel="self" type="application/rss+xml"/><item><title>Myanmar Unicode and Disqus Comment Box</title><link>https://minsoehan.com/tech/myanmar-unicode-and-disqus-comment-box/</link><pubDate>Sat, 09 Aug 2025 10:29:36 +0630</pubDate><guid>https://minsoehan.com/tech/myanmar-unicode-and-disqus-comment-box/</guid><description>&lt;p>If you type Myanmar language online, you’ve probably met this problem:&lt;br>
-Everything’s fine — until you type ေ (the “E-vowel”) second time (E.g. the second ေ in ကောင်း ေကာင်း) in a Disqus comment box. Suddenly, the whole page reloads and even &lt;a href="https://disqus.com">Disqus&lt;/a> comment box disappears.&lt;/p>
-&lt;p>This is not a random glitch. It’s a combination of:&lt;/p>
-&lt;ul>
-&lt;li>The &lt;strong>Myanmar typing system&lt;/strong>, where the vowel ေ is traditionally typed before the consonant (e.g., type ေ then က to get ေက) for typing ကောင်း.&lt;/li>
-&lt;li>&lt;strong>Unicode order rules&lt;/strong>, which expect consonants first (e.g., ကောင်း).&lt;/li>
-&lt;li>A &lt;strong>Disqus input handling bug&lt;/strong>, which misinterprets the second typing of ေ as a “Back” or “Reload” key sequence in certain browsers.&lt;/li>
-&lt;/ul>
-&lt;p>The result? Your carefully typed comment is gone.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Disqus on Min Soe Han</title><link>https://minsoehan.com/tags/disqus/</link><description>Recent content in Disqus on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 09 Aug 2025 10:29:36 +0630</lastBuildDate><atom:link href="https://minsoehan.com/tags/disqus/index.xml" rel="self" type="application/rss+xml"/><item><title>Myanmar Unicode and Disqus Comment Box</title><link>https://minsoehan.com/tech/myanmar-unicode-and-disqus-comment-box/</link><pubDate>Sat, 09 Aug 2025 10:29:36 +0630</pubDate><guid>https://minsoehan.com/tech/myanmar-unicode-and-disqus-comment-box/</guid><description>&lt;p&gt;If you type Myanmar language online, you’ve probably met this problem:&lt;br&gt;
+Everything’s fine — until you type ေ (the “E-vowel”) second time (E.g. the second ေ in ကောင်း ေကာင်း) in a Disqus comment box. Suddenly, the whole page reloads and even &lt;a href="https://disqus.com"&gt;Disqus&lt;/a&gt; comment box disappears.&lt;/p&gt;
+&lt;p&gt;This is not a random glitch. It’s a combination of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;Myanmar typing system&lt;/strong&gt;, where the vowel ေ is traditionally typed before the consonant (e.g., type ေ then က to get ေက) for typing ကောင်း.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Unicode order rules&lt;/strong&gt;, which expect consonants first (e.g., ကောင်း).&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;Disqus input handling bug&lt;/strong&gt;, which misinterprets the second typing of ေ as a “Back” or “Reload” key sequence in certain browsers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The result? Your carefully typed comment is gone.&lt;/p&gt;</description></item></channel></rss>

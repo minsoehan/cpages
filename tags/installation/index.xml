@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Installation on Min Soe Han</title><link>https://minsoehan.com/tags/installation/</link><description>Recent content in Installation on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 14 Aug 2025 10:56:15 +0630</lastBuildDate><atom:link href="https://minsoehan.com/tags/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Arch Linux Installation</title><link>https://minsoehan.com/tech/arch-installation/</link><pubDate>Thu, 14 Aug 2025 10:56:15 +0630</pubDate><guid>https://minsoehan.com/tech/arch-installation/</guid><description>&lt;p>&lt;a href="https://archlinux.org/" target="_blank" rel="noopener noreferrer">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Installation on Min Soe Han</title><link>https://minsoehan.com/tags/installation/</link><description>Recent content in Installation on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 14 Aug 2025 10:56:15 +0630</lastBuildDate><atom:link href="https://minsoehan.com/tags/installation/index.xml" rel="self" type="application/rss+xml"/><item><title>Arch Linux Installation</title><link>https://minsoehan.com/tech/arch-installation/</link><pubDate>Thu, 14 Aug 2025 10:56:15 +0630</pubDate><guid>https://minsoehan.com/tech/arch-installation/</guid><description>&lt;p&gt;&lt;a href="https://archlinux.org/" target="_blank" rel="noopener noreferrer"&gt;
  Arch linux
-&lt;/a>
- installation is not that hard if you do it simple as if:&lt;/p>
-&lt;ul>
-&lt;li>you don&amp;rsquo;t need dual boot and just want to install it as first OS on your drive.&lt;/li>
-&lt;li>your computer is not too old and it supports &lt;a href="https://wiki.archlinux.org/title/Partitioning#GUID_Partition_Table" target="_blank" rel="noopener noreferrer">
+&lt;/a&gt;
+ installation is not that hard if you do it simple as if:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;you don&amp;rsquo;t need dual boot and just want to install it as first OS on your drive.&lt;/li&gt;
+&lt;li&gt;your computer is not too old and it supports &lt;a href="https://wiki.archlinux.org/title/Partitioning#GUID_Partition_Table" target="_blank" rel="noopener noreferrer"&gt;
  GPT
-&lt;/a>
-, &lt;a href="https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface" target="_blank" rel="noopener noreferrer">
+&lt;/a&gt;
+, &lt;a href="https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface" target="_blank" rel="noopener noreferrer"&gt;
  UEFI
-&lt;/a>
-, etc.&lt;/li>
-&lt;li>you don&amp;rsquo;t need LVM, system encryption or &lt;a href="https://wiki.archlinux.org/title/RAID" target="_blank" rel="noopener noreferrer">
+&lt;/a&gt;
+, etc.&lt;/li&gt;
+&lt;li&gt;you don&amp;rsquo;t need LVM, system encryption or &lt;a href="https://wiki.archlinux.org/title/RAID" target="_blank" rel="noopener noreferrer"&gt;
  RAID
-&lt;/a>
-.&lt;/li>
-&lt;li>you don&amp;rsquo;t mind to read the wiki pages.&lt;/li>
-&lt;/ul>
-&lt;p>See also: &lt;a href="https://wiki.archlinux.org/title/Installation_guide" target="_blank" rel="noopener noreferrer">
+&lt;/a&gt;
+.&lt;/li&gt;
+&lt;li&gt;you don&amp;rsquo;t mind to read the wiki pages.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See also: &lt;a href="https://wiki.archlinux.org/title/Installation_guide" target="_blank" rel="noopener noreferrer"&gt;
  Official Installation Guide
-&lt;/a>
-&lt;/p></description></item></channel></rss>
+&lt;/a&gt;
+&lt;/p&gt;</description></item></channel></rss>
