@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web on Min Soe Han</title><link>https://minsoehan.com/categories/web/</link><description>Recent content in Web on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 14 Sep 2025 13:20:43 +0630</lastBuildDate><atom:link href="https://minsoehan.com/categories/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Astro Blog Build</title><link>https://minsoehan.com/tech/astro-blog-build/</link><pubDate>Sun, 14 Sep 2025 13:20:43 +0630</pubDate><guid>https://minsoehan.com/tech/astro-blog-build/</guid><description>&lt;p&gt;This is personal record for building a blog site using Astro web framework with Cloudflare integration. Consult with this pages: &lt;a href="https://docs.astro.build/"&gt;https://docs.astro.build/&lt;/a&gt; and &lt;a href="https://codeberg.org/minsoehan/cloudflare-astro-blog-sample"&gt;https://codeberg.org/minsoehan/cloudflare-astro-blog-sample&lt;/a&gt; for more details.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web on Min Soe Han</title><link>https://minsoehan.com/categories/web/</link><description>Recent content in Web on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 02 Oct 2025 15:23:30 +0630</lastBuildDate><atom:link href="https://minsoehan.com/categories/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Astro Notes</title><link>https://minsoehan.com/tech/astro-notes/</link><pubDate>Thu, 02 Oct 2025 15:23:30 +0630</pubDate><guid>https://minsoehan.com/tech/astro-notes/</guid><description>&lt;h3 id="json-import-type-errors"&gt;JSON import type errors&lt;/h3&gt;
+&lt;p&gt;When we do:&lt;/p&gt;
+
+
+
+&lt;div class="code-header"&gt;
+ &lt;div class="text"&gt;index.astro&lt;/div&gt;
+ &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
+ &lt;div class="highlight" text="index.astro"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ts" data-lang="ts"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;import&lt;/span&gt; mpps &lt;span style="color:#ff7b72"&gt;from&lt;/span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;../../../content/members/documents/pps-myan/pps-myan.json&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ff7b72"&gt;import&lt;/span&gt; epps &lt;span style="color:#ff7b72"&gt;from&lt;/span&gt; &lt;span style="color:#a5d6ff"&gt;&amp;#34;../../../content/members/documents/pps-eng/pps-eng.json&amp;#34;&lt;/span&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;VSCode/TS will show red underlines because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;By default, TypeScript doesn’t always know how to type &lt;code&gt;*.json&lt;/code&gt; imports.&lt;/li&gt;
+&lt;li&gt;Unless you have &lt;code&gt;&amp;quot;resolveJsonModule&amp;quot;: true&lt;/code&gt; in your &lt;code&gt;tsconfig.json&lt;/code&gt;, VSCode/TS will complain (red underline), even though Astro’s bundler (Vite) will run it fine.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Fix:&lt;/p&gt;
+
+
+
+&lt;div class="code-header"&gt;
+ &lt;div class="text"&gt;tsconfig.json&lt;/div&gt;
+ &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
+ &lt;div class="highlight" text="tsconfig.json"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;compilerOptions&amp;#34;&lt;/span&gt;: {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;resolveJsonModule&amp;#34;&lt;/span&gt;: &lt;span style="color:#79c0ff"&gt;true&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;esModuleInterop&amp;#34;&lt;/span&gt;: &lt;span style="color:#79c0ff"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 class="mt3rem" id="combining-layout-astro-md"&gt;Combining Layout Astro Md&lt;/h3&gt;
+&lt;p&gt;You may want unify them into a single layout by detecting whether the props come from &lt;code&gt;*.astro&lt;/code&gt;, an astro page or &lt;code&gt;*.md&lt;/code&gt;, a Markdown/MDX page.&lt;/p&gt;</description></item><item><title>Astro Blog Build</title><link>https://minsoehan.com/tech/astro-blog-build/</link><pubDate>Sun, 14 Sep 2025 13:20:43 +0630</pubDate><guid>https://minsoehan.com/tech/astro-blog-build/</guid><description>&lt;p&gt;This is personal record for building a blog site using Astro web framework with Cloudflare integration. Consult with this pages: &lt;a href="https://docs.astro.build/"&gt;https://docs.astro.build/&lt;/a&gt; and &lt;a href="https://codeberg.org/minsoehan/cloudflare-astro-blog-sample"&gt;https://codeberg.org/minsoehan/cloudflare-astro-blog-sample&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;h4 id="create-cloudflare-worker-with-astro-framework"&gt;Create Cloudflare Worker with Astro Framework&lt;/h4&gt;
 
 
