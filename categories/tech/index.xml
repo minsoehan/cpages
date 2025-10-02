@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tech on Min Soe Han</title><link>https://minsoehan.com/categories/tech/</link><description>Recent content in Tech on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 14 Sep 2025 13:20:43 +0630</lastBuildDate><atom:link href="https://minsoehan.com/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>Astro Blog Build</title><link>https://minsoehan.com/tech/astro-blog-build/</link><pubDate>Sun, 14 Sep 2025 13:20:43 +0630</pubDate><guid>https://minsoehan.com/tech/astro-blog-build/</guid><description>&lt;p&gt;This is personal record for building a blog site using Astro web framework with Cloudflare integration. Consult with this pages: &lt;a href="https://docs.astro.build/"&gt;https://docs.astro.build/&lt;/a&gt; and &lt;a href="https://codeberg.org/minsoehan/cloudflare-astro-blog-sample"&gt;https://codeberg.org/minsoehan/cloudflare-astro-blog-sample&lt;/a&gt; for more details.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tech on Min Soe Han</title><link>https://minsoehan.com/categories/tech/</link><description>Recent content in Tech on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 02 Oct 2025 13:30:12 +0630</lastBuildDate><atom:link href="https://minsoehan.com/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>Reset Local Repo to Match Remote Repo Exactly</title><link>https://minsoehan.com/tech/reset-local-repo/</link><pubDate>Thu, 02 Oct 2025 13:30:12 +0630</pubDate><guid>https://minsoehan.com/tech/reset-local-repo/</guid><description>&lt;p&gt;At any point, you will want to completely reset your local project so it matches the remote repo exactly (discarding any local changes, extra files, etc.).&lt;/p&gt;
+&lt;p&gt;Here are the safe ways depending on how “hard” a reset you need:&lt;/p&gt;
+&lt;h3 class="mt3rem" id="option-1-reset-branch-to-remote-keeps-untracked-files"&gt;Option 1: Reset branch to remote (keeps untracked files)&lt;/h3&gt;
+
+
+
+&lt;div class="code-header"&gt;
+ &lt;div class="text"&gt;bash&lt;/div&gt;
+ &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
+ &lt;div class="highlight" text="bash"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git fetch --all
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git reset --hard origin/main&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Discards local commits&lt;/li&gt;
+&lt;li&gt;Resets all tracked files to the remote state&lt;/li&gt;
+&lt;li&gt;Leaves untracked files (stuff Git doesn’t know about) in your working directory&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 class="mt3rem" id="option-2-reset-branch-and-also-delete-untracked-files"&gt;Option 2: Reset branch and also delete untracked files&lt;/h3&gt;
+
+
+
+&lt;div class="code-header"&gt;
+ &lt;div class="text"&gt;bash&lt;/div&gt;
+ &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
+ &lt;div class="highlight" text="bash"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git fetch --all
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git reset --hard origin/main
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clean -fd&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;-f&lt;/strong&gt; means force&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-d&lt;/strong&gt; means removing untracked directories too&lt;/li&gt;
+&lt;li&gt;After this, your working directory (local project repo) matches to the remote repo exactly.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 class="mt3rem" id="option-3-really-start-fresh-nuke--re-clone"&gt;Option 3: Really start fresh (nuke &amp;amp; re-clone)&lt;/h3&gt;
+
+
+
+&lt;div class="code-header"&gt;
+ &lt;div class="text"&gt;bash&lt;/div&gt;
+ &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
+ &lt;div class="highlight" text="bash"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd ..
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rm -rf your-project-folder
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone https://github.com/your-username/your-repo.git
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd your-repo&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Above is simplest and cleanest&lt;/li&gt;
+&lt;li&gt;This guarantees no leftover files or configs&lt;/li&gt;
+&lt;li&gt;Useful if you’ve had a lot of messy local changes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 class="mt3rem" id="originmain-vs-origin-main"&gt;origin/main vs origin main&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;origin/main&lt;/code&gt; is a &lt;strong&gt;ref name&lt;/strong&gt; (a branch), single argument.&lt;/p&gt;</description></item><item><title>Astro Blog Build</title><link>https://minsoehan.com/tech/astro-blog-build/</link><pubDate>Sun, 14 Sep 2025 13:20:43 +0630</pubDate><guid>https://minsoehan.com/tech/astro-blog-build/</guid><description>&lt;p&gt;This is personal record for building a blog site using Astro web framework with Cloudflare integration. Consult with this pages: &lt;a href="https://docs.astro.build/"&gt;https://docs.astro.build/&lt;/a&gt; and &lt;a href="https://codeberg.org/minsoehan/cloudflare-astro-blog-sample"&gt;https://codeberg.org/minsoehan/cloudflare-astro-blog-sample&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;h4 id="create-cloudflare-worker-with-astro-framework"&gt;Create Cloudflare Worker with Astro Framework&lt;/h4&gt;
 
 
