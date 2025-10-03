@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tech on Min Soe Han</title><link>https://minsoehan.com/categories/tech/</link><description>Recent content in Tech on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 02 Oct 2025 15:23:30 +0630</lastBuildDate><atom:link href="https://minsoehan.com/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>Astro Notes</title><link>https://minsoehan.com/tech/astro-notes/</link><pubDate>Thu, 02 Oct 2025 15:23:30 +0630</pubDate><guid>https://minsoehan.com/tech/astro-notes/</guid><description>&lt;h3 id="json-import-type-errors"&gt;JSON import type errors&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tech on Min Soe Han</title><link>https://minsoehan.com/categories/tech/</link><description>Recent content in Tech on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 03 Oct 2025 10:16:09 +0630</lastBuildDate><atom:link href="https://minsoehan.com/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>Image Processing for Website</title><link>https://minsoehan.com/tech/image-processing/</link><pubDate>Fri, 03 Oct 2025 10:16:09 +0630</pubDate><guid>https://minsoehan.com/tech/image-processing/</guid><description>&lt;p&gt;Image processing became essential part of web development nowadays. It is my way of image processing in &lt;a href="https://archlinux.org/"&gt;Arch Linux&lt;/a&gt; with following steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Resizing big image before optimizing using &lt;a href="https://imagemagick.org/"&gt;ImageMagic&lt;/a&gt; or &lt;a href="https://ffmpeg.org/"&gt;FFmpeg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Optimizing image using:
+&lt;ul class="mb0"&gt;
+&lt;li&gt;&lt;a href="https://github.com/tjko/jpegoptim"&gt;jpegoptim&lt;/a&gt; for JPG&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pngquant.org/"&gt;pngquant&lt;/a&gt; for PNG or&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://optipng.sourceforge.net/"&gt;optipng&lt;/a&gt; for PNG or&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oxipng/oxipng"&gt;oxipng&lt;/a&gt; for PNG or&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://squoosh.app/"&gt;Squoosh&lt;/a&gt; or &lt;a href="https://github.com/GoogleChromeLabs/squoosh"&gt;Squoosh GitHub&lt;/a&gt; of Google for JPG and PNG&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Convert image to &lt;code&gt;webp&lt;/code&gt; format using &lt;code&gt;cwebp&lt;/code&gt; of &lt;a href="https://github.com/webmproject/libwebp"&gt;libwebp&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 class="mt3rem" id="install-required-software-in-arch-linux"&gt;Install Required Software in Arch Linux&lt;/h3&gt;
+
+
+
+&lt;div class="code-header"&gt;
+ &lt;div class="text"&gt;~&lt;/div&gt;
+ &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;pacman -S jpegoptim pngquant libwebp libwebp-utils&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 class="mt3rem" id="resize-image"&gt;Resize Image&lt;/h3&gt;
+&lt;p&gt;Using &lt;a href="https://imagemagick.org/"&gt;ImageMagic&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Astro Notes</title><link>https://minsoehan.com/tech/astro-notes/</link><pubDate>Thu, 02 Oct 2025 15:23:30 +0630</pubDate><guid>https://minsoehan.com/tech/astro-notes/</guid><description>&lt;h3 id="json-import-type-errors"&gt;JSON import type errors&lt;/h3&gt;
 &lt;p&gt;When we do:&lt;/p&gt;
 
 
@@ -28,7 +52,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;h3 class="mt3rem" id="combining-layout-astro-md"&gt;Combining Layout Astro Md&lt;/h3&gt;
+&lt;h3 class="mt3rem" id="combining-layouts-astro-and-md"&gt;Combining Layouts, Astro and Md&lt;/h3&gt;
 &lt;p&gt;You may want unify them into a single layout by detecting whether the props come from &lt;code&gt;*.astro&lt;/code&gt;, an astro page or &lt;code&gt;*.md&lt;/code&gt;, a Markdown/MDX page.&lt;/p&gt;</description></item><item><title>Reset Local Repo to Match Remote Repo Exactly</title><link>https://minsoehan.com/tech/reset-local-repo/</link><pubDate>Thu, 02 Oct 2025 13:30:12 +0630</pubDate><guid>https://minsoehan.com/tech/reset-local-repo/</guid><description>&lt;p&gt;At any point, you may want to completely reset your local project so it matches the remote repo exactly (discarding any local changes, extra files, etc.).&lt;/p&gt;
 &lt;p&gt;Here are the safe ways depending on how “hard” a reset you need:&lt;/p&gt;
 &lt;h3 class="mt3rem" id="option-1-reset-branch-to-remote-keeps-untracked-files"&gt;Option 1: Reset branch to remote (keeps untracked files)&lt;/h3&gt;

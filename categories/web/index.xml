@@ -28,7 +28,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;h3 class="mt3rem" id="combining-layout-astro-md"&gt;Combining Layout Astro Md&lt;/h3&gt;
+&lt;h3 class="mt3rem" id="combining-layouts-astro-and-md"&gt;Combining Layouts, Astro and Md&lt;/h3&gt;
 &lt;p&gt;You may want unify them into a single layout by detecting whether the props come from &lt;code&gt;*.astro&lt;/code&gt;, an astro page or &lt;code&gt;*.md&lt;/code&gt;, a Markdown/MDX page.&lt;/p&gt;</description></item><item><title>Astro Blog Build</title><link>https://minsoehan.com/tech/astro-blog-build/</link><pubDate>Sun, 14 Sep 2025 13:20:43 +0630</pubDate><guid>https://minsoehan.com/tech/astro-blog-build/</guid><description>&lt;p&gt;This is personal record for building a blog site using Astro web framework with Cloudflare integration. Consult with this pages: &lt;a href="https://docs.astro.build/"&gt;https://docs.astro.build/&lt;/a&gt; and &lt;a href="https://codeberg.org/minsoehan/cloudflare-astro-blog-sample"&gt;https://codeberg.org/minsoehan/cloudflare-astro-blog-sample&lt;/a&gt; for more details.&lt;/p&gt;
 &lt;h4 id="create-cloudflare-worker-with-astro-framework"&gt;Create Cloudflare Worker with Astro Framework&lt;/h4&gt;
 
