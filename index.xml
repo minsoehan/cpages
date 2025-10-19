@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Min Soe Han</title><link>https://minsoehan.com/</link><description>Recent content on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 03 Oct 2025 10:16:09 +0630</lastBuildDate><atom:link href="https://minsoehan.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Image Processing for Website</title><link>https://minsoehan.com/tech/image-processing/</link><pubDate>Fri, 03 Oct 2025 10:16:09 +0630</pubDate><guid>https://minsoehan.com/tech/image-processing/</guid><description>&lt;p&gt;Image processing became essential part of web development nowadays. It is my way of image processing in &lt;a href="https://archlinux.org/"&gt;Arch Linux&lt;/a&gt; with following steps:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Min Soe Han</title><link>https://minsoehan.com/</link><description>Recent content on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 19 Oct 2025 09:20:24 +0630</lastBuildDate><atom:link href="https://minsoehan.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Progressive Web App (PWA)</title><link>https://minsoehan.com/tech/pwa/</link><pubDate>Sun, 19 Oct 2025 09:20:24 +0630</pubDate><guid>https://minsoehan.com/tech/pwa/</guid><description>&lt;p&gt;Progressive Web Apps (PWAs) are web apps built and enhanced with modern APIs to deliver enhanced capabilities, reliability, and installability while reaching anyone, anywhere, on any device, all with a single codebase.&lt;/p&gt;
+&lt;h3 class="mt3rem" id="reads"&gt;Reads&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://developers.google.com/codelabs/pwa-in-play#0"&gt;https://developers.google.com/codelabs/pwa-in-play#0&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://web.dev/learn/pwa/"&gt;https://web.dev/learn/pwa/&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://github.com/GoogleChromeLabs/bubblewrap/tree/main/packages/cli"&gt;https://github.com/GoogleChromeLabs/bubblewrap/tree/main/packages/cli&lt;/a&gt;
+&lt;a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps"&gt;https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps&lt;/a&gt;&lt;/p&gt;
+&lt;h3 class="mt3rem" id="steps"&gt;Steps&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Make Website PWA Ready&lt;/li&gt;
+&lt;li&gt;Build PWA using &lt;a href="https://github.com/GoogleChromeLabs/bubblewrap"&gt;bubblewrap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Signing the App&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 class="mt3rem" id="1-make-website-pwa-ready"&gt;1. Make Website PWA Ready&lt;/h4&gt;
+&lt;p&gt;Create &lt;code&gt;/app.webmanifest&lt;/code&gt; file with the following content:&lt;/p&gt;
+
+
+
+&lt;div class="code-header"&gt;
+ &lt;div class="text"&gt;/app.webmanufest&lt;/div&gt;
+ &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
+ &lt;div class="highlight" text="/app.webmanufest"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;name&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;MGMAemp&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;short_name&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;MGMAemp&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;start_url&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;/&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;scope&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;/&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;icons&amp;#34;&lt;/span&gt;: [
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;src&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;/favicon/web-app-manifest-192x192.png&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;sizes&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;192x192&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;type&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;image/png&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;purpose&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;maskable&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; },
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;src&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;/favicon/web-app-manifest-512x512.png&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;sizes&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;512x512&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;type&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;image/png&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;purpose&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;maskable&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; ],
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;theme_color&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;#ffffff&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;background_color&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;#ffffff&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#7ee787"&gt;&amp;#34;display&amp;#34;&lt;/span&gt;: &lt;span style="color:#a5d6ff"&gt;&amp;#34;standalone&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Suggestion&lt;/strong&gt; Online favicon generators like &lt;a href="https://realfavicongenerator.net/"&gt;https://realfavicongenerator.net/&lt;/a&gt; generates not only favicons, but also &lt;code&gt;site.webmanifest&lt;/code&gt; file with PWA basic content:&lt;/p&gt;</description></item><item><title>Image Processing for Website</title><link>https://minsoehan.com/tech/image-processing/</link><pubDate>Fri, 03 Oct 2025 10:16:09 +0630</pubDate><guid>https://minsoehan.com/tech/image-processing/</guid><description>&lt;p&gt;Image processing became essential part of web development nowadays. It is my way of image processing in &lt;a href="https://archlinux.org/"&gt;Arch Linux&lt;/a&gt; with following steps:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Resizing big image before optimizing using &lt;a href="https://imagemagick.org/"&gt;ImageMagic&lt;/a&gt; or &lt;a href="https://ffmpeg.org/"&gt;FFmpeg&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Optimizing image using:
