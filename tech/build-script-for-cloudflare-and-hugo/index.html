@@ -8,7 +8,7 @@
 <span>build-script-for-cloudflare-and-hugo</span></div><div class=page><article data-pagefind-body><h1>Build Script for Cloudflare and Hugo</h1><span class=material-symbols-outlined id=expand-right-onoff>expand_circle_right</span>
 <time datetime=2025-08-08T16:35:50+06:30>August 8, 2025</time><p>In Cloudflare Pages → Project Settings → Build Configuration, I can set the Framework preset to <code>Hugo</code>, the Build command to <code>hugo</code>, and the Build output directory to <code>public</code>. That’s the default when selecting Hugo.</p><p>However, when using Pagefind, even though I can set the Build command to <code>hugo && npx pagefind --site "public"</code>, it’s not quite satisfying. This is because, on every build, Cloudflare runs <code>hugo</code>, installs Pagefind, and then runs <code>npx pagefind --site "public"</code> again — which takes a long time.</p><p>Since I can already do this locally, I’m wondering why it should be so difficult. So instead, I select <code>None</code> for the Framework preset and leave both the Build command and the Build output directory blank. Then I run:</p><div class=code-header><div class=text>~</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>hugo --destination<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;/path/to/site-folder&#34;</span>
 </span></span><span style=display:flex><span>npx pagefind --site <span style=color:#a5d6ff>&#34;site-folder&#34;</span></span></span></code></pre></div></div><p>After that, I push it to the GitHub repo. It’s a bit more cumbersome, but if I write a script, it’s manageable. The script is:</p><div class=code-header><div class=text>~</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span><span style=color:#8b949e;font-weight:700;font-style:italic>#!/bin/dash
-</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-weight:700;font-style:italic></span>
+</span></span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic># check if root and exit</span>
 </span></span><span style=display:flex><span><span style=color:#ff7b72>if</span> <span style=color:#ff7b72;font-weight:700>[</span> <span style=color:#ff7b72>$(($(</span>id -u<span style=color:#ff7b72>)))</span> -eq <span style=color:#a5d6ff>0</span> <span style=color:#ff7b72;font-weight:700>]</span>; <span style=color:#ff7b72>then</span>
 </span></span><span style=display:flex><span>    exit <span style=color:#a5d6ff>0</span>
@@ -93,7 +93,8 @@
 <span>&ensp;&bull;&#8202;</span>
 <a href=/tags/build/>Build</a>
 <span>&ensp;&bull;&#8202;</span>
-<a href=/tags/pagefind/>Pagefind</a></div></div></section></article><aside><div class=aside-sidebar><div class=section-info><h2><a href=/tech/>Tech Notes</a></h2><a href=/tech/pwa/>Progressive Web App (PWA)</a>
+<a href=/tags/pagefind/>Pagefind</a></div></div></section></article><aside><div class=aside-sidebar><div class=section-info><h2><a href=/tech/>Tech Notes</a></h2><a href=/tech/awk/>AWK Programming Notes</a>
+<a href=/tech/pwa/>Progressive Web App (PWA)</a>
 <a href=/tech/image-processing/>Image Processing for Website</a>
 <a href=/tech/astro-notes/>Astro Notes</a>
 <a href=/tech/reset-local-repo/>Reset Local Repo to Match …</a>
@@ -101,19 +102,18 @@
 <a href=/tech/break-word-css/>CSS overflow-wrap: break-word</a>
 <a href=/tech/submit-data-to-google-form-via-custom-html-form/>Submit Data to Google Form via …</a>
 <a href=/tech/google-sheets-simple-json-api/>Turning Google Sheets into a …</a>
-<a href=/tech/arch-installation/>Arch Linux Installation</a>
 <a href=/tech/>MORE</a></div><div class=categories><h3><a href=/categories/>Categories</a></h3><a href=/categories/legal/>Legal (26)</a>
 <a href=/categories/labor-law/>Labor Law (23)</a>
-<a href=/categories/tech/>Tech (18)</a>
+<a href=/categories/tech/>Tech (19)</a>
 <a href=/categories/linux/>Linux (5)</a>
 <a href=/categories/dev/>Dev (5)</a>
 <a href=/categories/open-diary/>Open Diary (3)</a>
 <a href=/categories>MORE</a></div><div class=tags><h3><a href=/tags/>Tags</a></h3><a href=/tags/leave-and-holiday/>Leave and Holiday (7)</a>
 <a href=/tags/osh/>Osh (4)</a>
+<a href=/tags/cloudflare/>Cloudflare (3)</a>
+<a href=/tags/hugo/>Hugo (2)</a>
 <a href=/tags/minimum-wage/>Minimum Wage (2)</a>
-<a href=/tags/system/>System (2)</a>
-<a href=/tags/wages/>Wages (2)</a>
-<a href=/tags/deduction/>Deduction (2)</a>
+<a href=/tags/arch-linux/>Arch Linux (2)</a>
 <a href=/tags/>MORE</a></div><div class=latest-posts><h3>Latest Posts</h3><a href=/others/human-and-windows/>လူနှင့် ပြတင်းပေါက်</a>
 <a href=/legal/labor-laws/public-holiday-and-negotiable-instrument-act/>အများပြည်သူ အလုပ်ပိတ်ရက်နှင့် လွှဲပြောင်းနိုင်သည့် စာချုပ်စာတမ်းများ အက်ဥပဒေ</a>
 <a href=/others/taxi-in-yangon/>Taxi Services in Yangon</a>

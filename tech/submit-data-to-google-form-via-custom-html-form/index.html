@@ -16,7 +16,7 @@
 </span></span><span style=display:flex><span>&lt;/<span style=color:#7ee787>form</span>&gt;</span></span></code></pre></div></div><p>In above structure, the input data will be submitted to the google form by default behavior. To bypass Google&rsquo;s <strong>Submission Confirmed</strong> page, it is redirected to hidden iframe using <code>target="hidden_iframe"</code>. And use a JavaScript like:</p><div class=code-header><div class=text>~</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#ff7b72>const</span> iframe <span style=color:#ff7b72;font-weight:700>=</span> document.getElementById(<span style=color:#a5d6ff>&#39;hidden_iframe&#39;</span>);
 </span></span><span style=display:flex><span>iframe.addEventListener(<span style=color:#a5d6ff>&#39;load&#39;</span>, () =&gt; {
 </span></span><span style=display:flex><span>    <span style=color:#8b949e;font-style:italic>// now you can do stuffs, such as displaying a message or redirecting to a new page.
-</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>});</span></span></code></pre></div></div><p>Assuming iframe onload is successful form submission—even though we can not check it without looking at targeted page—we can do stuffs like displaying a message or redirecting to a new page. The same result can be achieved by another way using a js script. Structure like:</p><h3 class=mt3rem id=method-2>Method 2</h3><div class=code-header><div class=text>~</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#7ee787>form</span> id<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;yourFormID&#34;</span> target<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;_blank&#34;</span> action<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;https://docs.google.com/forms/u/1/d/e/FORM-ID/formResponse&#34;</span>&gt;
+</span></span></span><span style=display:flex><span>});</span></span></code></pre></div></div><p>Assuming iframe onload is successful form submission—even though we can not check it without looking at targeted page—we can do stuffs like displaying a message or redirecting to a new page. The same result can be achieved by another way using a js script. Structure like:</p><h3 class=mt3rem id=method-2>Method 2</h3><div class=code-header><div class=text>~</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html><span style=display:flex><span>&lt;<span style=color:#7ee787>form</span> id<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;yourFormID&#34;</span> target<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;_blank&#34;</span> action<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;https://docs.google.com/forms/u/1/d/e/FORM-ID/formResponse&#34;</span>&gt;
 </span></span><span style=display:flex><span>    &lt;<span style=color:#7ee787>label</span> for<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;entry.12345678&#34;</span>&gt;Name:&lt;/<span style=color:#7ee787>label</span>&gt;
 </span></span><span style=display:flex><span>    &lt;<span style=color:#7ee787>input</span> type<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;text&#34;</span> name<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;entry.12345678&#34;</span> value<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;&#34;</span> required&gt;
 </span></span><span style=display:flex><span>    &lt;<span style=color:#7ee787>label</span> for<span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;entry.87654321&#34;</span>&gt;PhoneNo:&lt;/<span style=color:#7ee787>label</span>&gt;
@@ -25,13 +25,13 @@
 </span></span><span style=display:flex><span>&lt;/<span style=color:#7ee787>form</span>&gt;</span></span></code></pre></div></div><p>and use a JavaScript like:</p><div class=code-header><div class=text>~</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// DO NOT set variable like:
 </span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// const form.getElementById(&#39;yourFormID&#39;);
 </span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>// ensure adding event listener in one straight line like below:
-</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>document.getElementById(<span style=color:#a5d6ff>&#39;yourFormID&#39;</span>).addEventListener(<span style=color:#a5d6ff>&#39;submit&#39;</span>, <span style=color:#ff7b72>function</span>(event) {
+</span></span></span><span style=display:flex><span>document.getElementById(<span style=color:#a5d6ff>&#39;yourFormID&#39;</span>).addEventListener(<span style=color:#a5d6ff>&#39;submit&#39;</span>, <span style=color:#ff7b72>function</span>(event) {
 </span></span><span style=display:flex><span>    event.preventDefault(); <span style=color:#8b949e;font-style:italic>// required and important
-</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>    fetch(event.action, {
+</span></span></span><span style=display:flex><span>    fetch(event.action, {
 </span></span><span style=display:flex><span>        method<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#a5d6ff>&#39;POST&#39;</span>,
 </span></span><span style=display:flex><span>        body<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#ff7b72>new</span> FormData(event),
 </span></span><span style=display:flex><span>        mode<span style=color:#ff7b72;font-weight:700>:</span> <span style=color:#a5d6ff>&#39;no-cors&#39;</span> <span style=color:#8b949e;font-style:italic>// required and important
-</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>    }).then(() =&gt; {
+</span></span></span><span style=display:flex><span>    }).then(() =&gt; {
 </span></span><span style=display:flex><span>        alert(<span style=color:#a5d6ff>&#34;Form submission is confirmed.&#34;</span>);
 </span></span><span style=display:flex><span>    }).<span style=color:#ff7b72>catch</span>((error) =&gt; {
 </span></span><span style=display:flex><span>        alert(<span style=color:#a5d6ff>&#34;There was an error submitting form.&#34;</span>);
@@ -39,9 +39,9 @@
 </span></span><span style=display:flex><span>});</span></span></code></pre></div></div><p>In above code, the most overlooked tricky part is the first line. The form can not be set variable like:</p><div class=code-header><div class=text>~</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#ff7b72>const</span> form <span style=color:#ff7b72;font-weight:700>=</span> document.getElementById(<span style=color:#a5d6ff>&#39;yourFormID&#39;</span>);
 </span></span><span style=display:flex><span>form.addEventListener(<span style=color:#a5d6ff>&#39;submit&#39;</span>, <span style=color:#ff7b72>function</span> (event) {
 </span></span><span style=display:flex><span>    <span style=color:#8b949e;font-style:italic>// stuffs include fetch api are here.
-</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>});</span></span></code></pre></div></div><p>It only works for submitting data to the form but will not bypass Google&rsquo;s submission confirmed page which will be loaded at a new tab in browser. To get it works properly, the tricky part is using single line like:</p><div class=code-header><div class=text>~</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span>document.getElementById(<span style=color:#a5d6ff>&#39;yourFormID&#39;</span>).addEventListener(<span style=color:#a5d6ff>&#39;submit&#39;</span>, <span style=color:#ff7b72>function</span> (event) =&gt; {
+</span></span></span><span style=display:flex><span>});</span></span></code></pre></div></div><p>It only works for submitting data to the form but will not bypass Google&rsquo;s submission confirmed page which will be loaded at a new tab in browser. To get it works properly, the tricky part is using single line like:</p><div class=code-header><div class=text>~</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-js data-lang=js><span style=display:flex><span>document.getElementById(<span style=color:#a5d6ff>&#39;yourFormID&#39;</span>).addEventListener(<span style=color:#a5d6ff>&#39;submit&#39;</span>, <span style=color:#ff7b72>function</span> (event) =&gt; {
 </span></span><span style=display:flex><span>    <span style=color:#8b949e;font-style:italic>// stuffs include fetch api are here.
-</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic></span>});</span></span></code></pre></div></div><p>See also: <a href=https://stackoverflow.com/questions/44012261/getting-around-cors-with-embedded-google-forms>https://stackoverflow.com/questions/44012261/getting-around-cors-with-embedded-google-forms</a></p><p class=mb3rem>In conclusion, the method 1 is more preferable. How do you think?</p><section data-pagefind-ignore><div class=categories-tags-container><div class=categories><span>Categories&ensp;</span>
+</span></span></span><span style=display:flex><span>});</span></span></code></pre></div></div><p>See also: <a href=https://stackoverflow.com/questions/44012261/getting-around-cors-with-embedded-google-forms>https://stackoverflow.com/questions/44012261/getting-around-cors-with-embedded-google-forms</a></p><p class=mb3rem>In conclusion, the method 1 is more preferable. How do you think?</p><section data-pagefind-ignore><div class=categories-tags-container><div class=categories><span>Categories&ensp;</span>
 <span>&ensp;&bull;&#8202;</span>
 <a href=/categories/tech/>Tech</a>
 <span>&ensp;&bull;&#8202;</span>
@@ -51,7 +51,8 @@
 <span>&ensp;&bull;&#8202;</span>
 <a href=/tags/google-form/>Google Form</a>
 <span>&ensp;&bull;&#8202;</span>
-<a href=/tags/html/>Html</a></div></div></section></article><aside><div class=aside-sidebar><div class=section-info><h2><a href=/tech/>Tech Notes</a></h2><a href=/tech/pwa/>Progressive Web App (PWA)</a>
+<a href=/tags/html/>Html</a></div></div></section></article><aside><div class=aside-sidebar><div class=section-info><h2><a href=/tech/>Tech Notes</a></h2><a href=/tech/awk/>AWK Programming Notes</a>
+<a href=/tech/pwa/>Progressive Web App (PWA)</a>
 <a href=/tech/image-processing/>Image Processing for Website</a>
 <a href=/tech/astro-notes/>Astro Notes</a>
 <a href=/tech/reset-local-repo/>Reset Local Repo to Match …</a>
@@ -59,19 +60,18 @@
 <a href=/tech/break-word-css/>CSS overflow-wrap: break-word</a>
 <a href=/tech/submit-data-to-google-form-via-custom-html-form/>Submit Data to Google Form via …</a>
 <a href=/tech/google-sheets-simple-json-api/>Turning Google Sheets into a …</a>
-<a href=/tech/arch-installation/>Arch Linux Installation</a>
 <a href=/tech/>MORE</a></div><div class=categories><h3><a href=/categories/>Categories</a></h3><a href=/categories/legal/>Legal (26)</a>
 <a href=/categories/labor-law/>Labor Law (23)</a>
-<a href=/categories/tech/>Tech (18)</a>
+<a href=/categories/tech/>Tech (19)</a>
 <a href=/categories/linux/>Linux (5)</a>
 <a href=/categories/dev/>Dev (5)</a>
-<a href=/categories/open-diary/>Open Diary (3)</a>
+<a href=/categories/others/>Others (3)</a>
 <a href=/categories>MORE</a></div><div class=tags><h3><a href=/tags/>Tags</a></h3><a href=/tags/leave-and-holiday/>Leave and Holiday (7)</a>
 <a href=/tags/osh/>Osh (4)</a>
+<a href=/tags/cloudflare/>Cloudflare (3)</a>
 <a href=/tags/hugo/>Hugo (2)</a>
+<a href=/tags/minimum-wage/>Minimum Wage (2)</a>
 <a href=/tags/arch-linux/>Arch Linux (2)</a>
-<a href=/tags/cloudflare/>Cloudflare (2)</a>
-<a href=/tags/payment/>Payment (2)</a>
 <a href=/tags/>MORE</a></div><div class=latest-posts><h3>Latest Posts</h3><a href=/others/human-and-windows/>လူနှင့် ပြတင်းပေါက်</a>
 <a href=/legal/labor-laws/public-holiday-and-negotiable-instrument-act/>အများပြည်သူ အလုပ်ပိတ်ရက်နှင့် လွှဲပြောင်းနိုင်သည့် စာချုပ်စာတမ်းများ အက်ဥပဒေ</a>
 <a href=/others/taxi-in-yangon/>Taxi Services in Yangon</a>
