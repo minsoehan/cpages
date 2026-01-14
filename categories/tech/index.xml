@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tech on Min Soe Han</title><link>https://minsoehan.com/categories/tech/</link><description>Recent content in Tech on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 12 Jan 2026 16:20:19 +0630</lastBuildDate><atom:link href="https://minsoehan.com/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>AWK Basic</title><link>https://minsoehan.com/tech/awk/getting-started/</link><pubDate>Mon, 12 Jan 2026 16:20:19 +0630</pubDate><guid>https://minsoehan.com/tech/awk/getting-started/</guid><description>&lt;p&gt;Awk is a programming language that can handle and manipulate data. Suppose we have the following data file.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tech on Min Soe Han</title><link>https://minsoehan.com/categories/tech/</link><description>Recent content in Tech on Min Soe Han</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 14 Jan 2026 15:38:55 +0630</lastBuildDate><atom:link href="https://minsoehan.com/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>mshstatus</title><link>https://minsoehan.com/tech/mshstatus/</link><pubDate>Wed, 14 Jan 2026 15:38:55 +0630</pubDate><guid>https://minsoehan.com/tech/mshstatus/</guid><description>&lt;p&gt;For me, it took many years to understand trap and signal for immediate updating in status on a bar like swaybar. According to gnu bash manual, it can be understood that &lt;code&gt;sleep [n] &amp;amp;&lt;/code&gt; and &lt;code&gt;wait $!&lt;/code&gt; is key to implement mechanism of immediate trigger in status blocks. Importantly, &lt;code&gt;wait $!&lt;/code&gt; must be right after &lt;code&gt;sleep&lt;/code&gt; command with &lt;code&gt;&amp;amp;&lt;/code&gt; for going into background, for example, &lt;code&gt;sleep 9 &amp;amp;&lt;/code&gt;:&lt;/p&gt;
+
+
+
+&lt;div class="code-header"&gt;
+ &lt;div class="text"&gt;~&lt;/div&gt;
+ &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sleep &lt;span style="color:#a5d6ff"&gt;9&lt;/span&gt; &amp;amp;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;wait &lt;span style="color:#79c0ff"&gt;$!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: &lt;code&gt;$!&lt;/code&gt; is process id (pid) of previous command.&lt;/p&gt;</description></item><item><title>AWK Basic</title><link>https://minsoehan.com/tech/awk/getting-started/</link><pubDate>Mon, 12 Jan 2026 16:20:19 +0630</pubDate><guid>https://minsoehan.com/tech/awk/getting-started/</guid><description>&lt;p&gt;Awk is a programming language that can handle and manipulate data. Suppose we have the following data file.&lt;/p&gt;
 
 
 

@@ -1,0 +1,192 @@
+<!doctype html><html lang=en-us dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>mshstatus | Min Soe Han</title><meta name=description content="My first status software for swaybar or similar. Personal website of Min Soe Han – sharing tech notes on Linux, Bash, Dash, JavaScript, Hugo, Cloudflare, plus insights on Myanmar Labour Laws, legal articles, and open diary stories."><link rel=canonical href=https://minsoehan.com/tech/mshstatus/><meta property="og:type" content="article"><meta property="og:title" content="mshstatus | Min Soe Han"><meta property="og:description" content="My first status software for swaybar or similar. "><meta property="og:url" content="https://minsoehan.com/tech/mshstatus/"><meta property="og:site_name" content="Min Soe Han"><meta property="og:image" content="/images/msh-default-photo.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="mshstatus | Min Soe Han"><meta name=twitter:description content="My first status software for swaybar or similar. "><meta name=twitter:image content="/images/msh-default-photo.png"><link rel=sitemap type=application/xml title=Sitemap href=/sitemap.xml><link rel=icon type=image/png href=/favicon/favicon-96x96.png sizes=96x96><link rel=icon type=image/svg+xml href=/favicon/favicon.svg><link rel="shortcut icon" href=/favicon/favicon.ico><link rel=apple-touch-icon sizes=180x180 href=/favicon/apple-touch-icon.png><link rel=manifest href=/favicon/site.webmanifest><link rel=stylesheet href=/fonts/material-symbols/outlined.css><link rel=stylesheet href=/fonts/material-symbols/rounded.css><link rel=stylesheet href=/fonts/fontawesome/css/fontawesome.css><link rel=stylesheet href=/fonts/fontawesome/css/brands.css><link rel=stylesheet href=/fonts/fontawesome/css/solid.css><script async src="https://www.googletagmanager.com/gtag/js?id=G-9H7R6FMDJ6"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-9H7R6FMDJ6")</script><link rel=stylesheet href=/css/base.min.3ddb7f47882f79f66381ebd0ffd47bb2fcf1c9161d709d572ea51ebae89af178.css integrity="sha256-Pdt/R4gvefZjgevQ/9R7svzxyRYdcJ1XLqUeuuia8Xg=" crossorigin=anonymous><script src=/js/base.68c7a7926b6ee35fb1c3fc2cf07f8dfa9107d59ac255e9fe9fdf7f88d0d172bc.js integrity="sha256-aMenkmtu41+xw/ws8H+N+pEH1ZrCVen+n99/iNDRcrw=" crossorigin=anonymous></script><link rel=stylesheet href=/css/header.min.89f1703490de606e7d790fe24c046bd072be7572cc5e39e2e47ae0e673669d18.css integrity="sha256-ifFwNJDeYG59eQ/iTARr0HK+dXLMXjni5Hrg5nNmnRg=" crossorigin=anonymous><script src=/js/header.648dd4092c3b846018bd686e7f8f0fe0b899f45311722f1d23ff5a2e9bd1568f.js integrity="sha256-ZI3UCSw7hGAYvWhuf48P4LiZ9FMRci8dI/9aLpvRVo8=" crossorigin=anonymous></script><link rel=stylesheet href=/css/footer.min.e407844c945fec8f835d68fd1a3b39c9faae95a69fa749ddf43c3daf7cd8fcfe.css integrity="sha256-5AeETJRf7I+DXWj9Gjs5yfqulaafp0nd9Dw9r3zY/P4=" crossorigin=anonymous><link rel=stylesheet href=/css/page.min.8c44fb29e7c18c137b030ac377090e74724f4df1aa0685526e7302198f7d8318.css integrity="sha256-jET7KefBjBN7AwrDdwkOdHJPTfGqBoVSbnMCGY99gxg=" crossorigin=anonymous><link rel=stylesheet href=/css/breadcrumbs.min.00e902ec96cc38f04e0a160ae899b9051183575541063a249295608ea09b6a82.css integrity="sha256-AOkC7JbMOPBOChYK6Jm5BRGDV1VBBjokkpVgjqCbaoI=" crossorigin=anonymous><link rel=stylesheet href=/css/aside.min.fa713eebf3ae798a6c6bd52e2616b053e58a56baafcb41f3fd3737c7d3b87cbf.css integrity="sha256-+nE+6/OueYpsa9UuJhawU+WKVrqvy0Hz/Tc3x9O4fL8=" crossorigin=anonymous><script src=/js/page.ff0da435803832c627173d1248f1dc93cd865707b71e80c19179eefc8452190b.js integrity="sha256-/w2kNYA4MsYnFz0SSPHck82GVwe3HoDBkXnu/IRSGQs=" crossorigin=anonymous></script><link rel=stylesheet href=/css/code-header.min.8361ccd8d8cb761d2a78cefca638f94c480c10e289d54c9e82103b45e9f01532.css integrity="sha256-g2HM2NjLdh0qeM78pjj5TEgMEOKJ1UyeghA7RenwFTI=" crossorigin=anonymous><script src=/js/code-header.9a6a051f7bdb0306fd8c8ee6754f0f67eb5ecc1994fed2a1f24de36506e2bd6f.js integrity="sha256-mmoFH3vbAwb9jI7mdU8PZ+tezBmU/tKh8k3jZQbivW8=" crossorigin=anonymous defer></script></head><body><header><div class=row-one><div class=menu-title-search><div id=mobile-menu-button aria-label="Open menu"><svg id="icon-menu" height="24" viewBox="0 -960 960 960" width="24" fill="#eee"><path d="M120-240v-80h720v80H120zm0-2e2v-80h720v80H120zm0-2e2v-80h720v80H120z"/></svg>
+<svg id="icon-close" height="24" viewBox="0 -960 960 960" width="24" fill="#eee"><path d="m256-2e2-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224z"/></svg></div><div><a href=/ class=site-title>Min Soe Han</a></div><a href=/search class=main-search-icon><svg height="24" viewBox="0 -960 960 960" width="24" fill="#eee"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580t75.5-184.5T380-840t184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56zM380-4e2q75 0 127.5-52.5T560-580t-52.5-127.5T380-760t-127.5 52.5T2e2-580t52.5 127.5T380-4e2z"/></svg></a></div></div><div class=row-two><div class=navbar-wrapper><div class=left-box><nav><ul class=main-menu-parents><li><a aria-current=true class=ancestor href=/tech/>Tech</a></li><li><a href=/legal/>Legal<i class="fa-solid fa-chevron-down has-children-indicator"></i></a>
+<span class="material-symbols-outlined toggle-child-menu">keyboard_arrow_right</span><ul class=main-menu-children><li><a href=/legal/labor-laws/>Labor Laws</a></li><li><a href=/legal/investment/>Investment</a></li></ul></li><li><a href=/open-diary/>Open Diary</a></li><li><a href=/others/>Others</a></li><li><a href=/about/>About</a></li></ul></nav></div><div class=right-box><a href=https://github.com/minsoehan><i class="fa-brands fa-github"></i></a>
+<a href=https://codeberg.org/minsoehan><i class="fa-solid fa-code"></i></a><div><span class=material-symbols-outlined>email</span>&ensp;minsoehan243@gmail.com</div><div><span class=material-symbols-outlined>phone</span>&ensp;+95 9 25 731 3341</div></div></div></div><span id=scrollup><svg height="54" viewBox="0 -960 960 960" width="54" fill="#2f2f2f"><path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184z"/></svg></span></header><main><div class=breadcrumbs-wrapper><a href=/>home</a>
+<span class=breadcrumbs-divider>></span>
+<a href=/tech>tech</a>
+<span class=breadcrumbs-divider>></span>
+<span>mshstatus</span></div><div class=page><article data-pagefind-body><h1>mshstatus</h1><span class=material-symbols-outlined id=expand-right-onoff>expand_circle_right</span>
+<time datetime=2026-01-14T15:38:55+06:30>January 14, 2026</time><p>For me, it took many years to understand trap and signal for immediate updating in status on a bar like swaybar. According to gnu bash manual, it can be understood that <code>sleep [n] &</code> and <code>wait $!</code> is key to implement mechanism of immediate trigger in status blocks. Importantly, <code>wait $!</code> must be right after <code>sleep</code> command with <code>&</code> for going into background, for example, <code>sleep 9 &</code>:</p><div class=code-header><div class=text>~</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>...
+</span></span><span style=display:flex><span>sleep <span style=color:#a5d6ff>9</span> &amp;
+</span></span><span style=display:flex><span>wait <span style=color:#79c0ff>$!</span>
+</span></span><span style=display:flex><span>...</span></span></code></pre></div></div><p><strong>Note</strong>: <code>$!</code> is process id (pid) of previous command.</p><p>If Bash is waiting for a command to complete and receives a signal for which a trap has been set, it will not execute the trap until the command completes. If Bash is waiting for an <strong><em>asynchronous command via the wait builtin</em></strong>, and it receives a signal for which a trap has been set, the wait builtin will <strong><em>return immediately</em></strong> with an exit status greater than 128, immediately after which the shell executes the trap.<br>↳ <a href=https://www.gnu.org/software/bash/manual/html_node/Signals.html>https://www.gnu.org/software/bash/manual/html_node/Signals.html</a></p><h4 id=writing-in-dash-script>Writing in Dash Script</h4><div class=code-header><div class=text>mshstatus</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight text=mshstatus><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span><span style=color:#8b949e;font-weight:700;font-style:italic>#!/bin/dash
+</span></span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>muteupdate_func <span style=color:#ff7b72;font-weight:700>()</span> <span style=color:#ff7b72;font-weight:700>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#79c0ff>MSTATE</span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#ff7b72>$(</span>pactl get-sink-mute @DEFAULT_SINK@<span style=color:#ff7b72>)</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>}</span>
+</span></span><span style=display:flex><span>volumeupdate_func <span style=color:#ff7b72;font-weight:700>()</span> <span style=color:#ff7b72;font-weight:700>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#79c0ff>VOLUME</span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#ff7b72>$(</span>pactl get-sink-volume @DEFAULT_SINK@ | awk <span style=color:#a5d6ff>&#39;NR==1{print $1 &#34; &#34; $5, $12}&#39;</span><span style=color:#ff7b72>)</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>}</span>
+</span></span><span style=display:flex><span>brightnessupdate_func <span style=color:#ff7b72;font-weight:700>()</span> <span style=color:#ff7b72;font-weight:700>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#79c0ff>BRIGHT</span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#ff7b72>$(</span>brightnessctl -m | cut -d, -f4<span style=color:#ff7b72>)</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>}</span>
+</span></span><span style=display:flex><span>bnsupdate_func <span style=color:#ff7b72;font-weight:700>()</span> <span style=color:#ff7b72;font-weight:700>{</span>
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>if</span> <span style=color:#ff7b72;font-weight:700>[</span> -f /tmp/minsoehan.msh.9.d/mshbattnotionoff <span style=color:#ff7b72;font-weight:700>]</span>; <span style=color:#ff7b72>then</span>
+</span></span><span style=display:flex><span>        read -r BNSS &lt; /tmp/minsoehan.msh.9.d/mshbattnotionoff
+</span></span><span style=display:flex><span>        <span style=color:#79c0ff>BNSS</span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;:</span><span style=color:#79c0ff>$BNSS</span><span style=color:#a5d6ff>&#34;</span>
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>fi</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72;font-weight:700>}</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>muteupdate_func
+</span></span><span style=display:flex><span>volumeupdate_func
+</span></span><span style=display:flex><span>brightnessupdate_func
+</span></span><span style=display:flex><span>bnsupdate_func
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>trap muteupdate_func RTMIN+1
+</span></span><span style=display:flex><span>trap volumeupdate_func RTMIN+2
+</span></span><span style=display:flex><span>trap brightnessupdate_func RTMIN+3
+</span></span><span style=display:flex><span>trap bnsupdate_func RTMIN+4
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#79c0ff>COUNTER</span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>0</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>while</span> true; <span style=color:#ff7b72>do</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>if</span> <span style=color:#ff7b72;font-weight:700>[</span> <span style=color:#a5d6ff>&#34;</span><span style=color:#79c0ff>$COUNTER</span><span style=color:#a5d6ff>&#34;</span> -eq <span style=color:#a5d6ff>0</span> <span style=color:#ff7b72;font-weight:700>]</span>; <span style=color:#ff7b72>then</span>
+</span></span><span style=display:flex><span>        <span style=color:#79c0ff>DATETIME</span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#ff7b72>$(</span>date +<span style=color:#a5d6ff>&#39;%F %A %R - %I:%M %p&#39;</span><span style=color:#ff7b72>)</span>
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>fi</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    read -r BSTAT &lt; /sys/class/power_supply/BAT0/status
+</span></span><span style=display:flex><span>    read -r BCAP &lt; /sys/class/power_supply/BAT0/capacity
+</span></span><span style=display:flex><span>    <span style=color:#79c0ff>BATT</span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;</span><span style=color:#a5d6ff>${</span><span style=color:#79c0ff>BSTAT</span><span style=color:#a5d6ff>}</span><span style=color:#a5d6ff>: </span><span style=color:#a5d6ff>${</span><span style=color:#79c0ff>BCAP</span><span style=color:#a5d6ff>}</span><span style=color:#a5d6ff>%&#34;</span>
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    read -r WFSTAT &lt; /sys/class/net/wlo1/operstate
+</span></span><span style=display:flex><span>    <span style=color:#79c0ff>WIFI</span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#a5d6ff>&#34;:</span><span style=color:#79c0ff>$WFSTAT</span><span style=color:#a5d6ff>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    printf <span style=color:#a5d6ff>&#34;%s    %s    %s    %s    %s    %s    %s *  \n&#34;</span> <span style=color:#79c0ff>\
+</span></span></span><span style=display:flex><span>        <span style=color:#a5d6ff>&#34;</span><span style=color:#79c0ff>$MSTATE</span><span style=color:#a5d6ff>&#34;</span> <span style=color:#a5d6ff>&#34;</span><span style=color:#79c0ff>$VOLUME</span><span style=color:#a5d6ff>&#34;</span> <span style=color:#a5d6ff>&#34;</span><span style=color:#79c0ff>$WIFI</span><span style=color:#a5d6ff>&#34;</span> <span style=color:#a5d6ff>&#34;</span><span style=color:#79c0ff>$BNSS</span><span style=color:#a5d6ff>&#34;</span> <span style=color:#a5d6ff>&#34;</span><span style=color:#79c0ff>$BATT</span><span style=color:#a5d6ff>&#34;</span> <span style=color:#a5d6ff>&#34;</span><span style=color:#79c0ff>$DATETIME</span><span style=color:#a5d6ff>&#34;</span> <span style=color:#a5d6ff>&#34;</span><span style=color:#79c0ff>$BRIGHT</span><span style=color:#a5d6ff>&#34;</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    sleep <span style=color:#a5d6ff>5</span> &amp;
+</span></span><span style=display:flex><span>    wait <span style=color:#79c0ff>$!</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#79c0ff>COUNTER</span><span style=color:#ff7b72;font-weight:700>=</span><span style=color:#ff7b72>$((</span> <span style=color:#ff7b72;font-weight:700>(</span>COUNTER <span style=color:#ff7b72;font-weight:700>+</span> <span style=color:#a5d6ff>1</span><span style=color:#ff7b72;font-weight:700>)</span> <span style=color:#ff7b72;font-weight:700>%</span> <span style=color:#a5d6ff>2</span> <span style=color:#ff7b72>))</span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>done</span></span></span></code></pre></div></div><h4 class=mt3rem id=writing-in-c-programming-language>Writing in C Programming Language</h4><p>Anyhow, it is more sophisticated and elegant if it is written in C Programming Language.</p><div class=code-header><div class=text>mshcstatus</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight text=mshcstatus><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#8b949e;font-weight:700;font-style:italic>#include</span> <span style=color:#8b949e;font-weight:700;font-style:italic>&lt;signal.h&gt;</span><span style=color:#8b949e;font-weight:700;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-weight:700;font-style:italic>#include</span> <span style=color:#8b949e;font-weight:700;font-style:italic>&lt;stddef.h&gt;</span><span style=color:#8b949e;font-weight:700;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-weight:700;font-style:italic>#include</span> <span style=color:#8b949e;font-weight:700;font-style:italic>&lt;stdio.h&gt;</span><span style=color:#8b949e;font-weight:700;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-weight:700;font-style:italic>#include</span> <span style=color:#8b949e;font-weight:700;font-style:italic>&lt;string.h&gt;</span><span style=color:#8b949e;font-weight:700;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-weight:700;font-style:italic>#include</span> <span style=color:#8b949e;font-weight:700;font-style:italic>&lt;time.h&gt;</span><span style=color:#8b949e;font-weight:700;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:#8b949e;font-weight:700;font-style:italic>#include</span> <span style=color:#8b949e;font-weight:700;font-style:italic>&lt;unistd.h&gt;</span><span style=color:#8b949e;font-weight:700;font-style:italic>
+</span></span></span><span style=display:flex><span><span style=color:#ff7b72>volatile</span> <span style=color:#ff7b72>sig_atomic_t</span> update_mute <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>1</span>;
+</span></span><span style=display:flex><span><span style=color:#ff7b72>volatile</span> <span style=color:#ff7b72>sig_atomic_t</span> update_volume <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>1</span>;
+</span></span><span style=display:flex><span><span style=color:#ff7b72>volatile</span> <span style=color:#ff7b72>sig_atomic_t</span> update_brightness <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>1</span>;
+</span></span><span style=display:flex><span><span style=color:#ff7b72>volatile</span> <span style=color:#ff7b72>sig_atomic_t</span> update_bns <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>1</span>;
+</span></span><span style=display:flex><span><span style=color:#ff7b72>void</span> <span style=color:#d2a8ff;font-weight:700>handle_signal</span>(<span style=color:#ff7b72>int</span> sig) {
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>if</span> (sig <span style=color:#ff7b72;font-weight:700>==</span> SIGRTMIN <span style=color:#ff7b72;font-weight:700>+</span> <span style=color:#a5d6ff>5</span>) {
+</span></span><span style=display:flex><span>        update_mute <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>1</span>;
+</span></span><span style=display:flex><span>    } <span style=color:#ff7b72>else</span> <span style=color:#ff7b72>if</span> (sig <span style=color:#ff7b72;font-weight:700>==</span> SIGRTMIN <span style=color:#ff7b72;font-weight:700>+</span> <span style=color:#a5d6ff>6</span>) {
+</span></span><span style=display:flex><span>        update_volume <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>1</span>;
+</span></span><span style=display:flex><span>    } <span style=color:#ff7b72>else</span> <span style=color:#ff7b72>if</span> (sig <span style=color:#ff7b72;font-weight:700>==</span> SIGRTMIN <span style=color:#ff7b72;font-weight:700>+</span> <span style=color:#a5d6ff>7</span>) {
+</span></span><span style=display:flex><span>        update_brightness <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>1</span>;
+</span></span><span style=display:flex><span>    } <span style=color:#ff7b72>else</span> <span style=color:#ff7b72>if</span> (sig <span style=color:#ff7b72;font-weight:700>==</span> SIGRTMIN <span style=color:#ff7b72;font-weight:700>+</span> <span style=color:#a5d6ff>8</span>) {
+</span></span><span style=display:flex><span>        update_bns <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>1</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#ff7b72>void</span> <span style=color:#d2a8ff;font-weight:700>get_command_output</span>(<span style=color:#ff7b72>const</span> <span style=color:#ff7b72>char</span> <span style=color:#ff7b72;font-weight:700>*</span>cmd, <span style=color:#ff7b72>char</span> <span style=color:#ff7b72;font-weight:700>*</span>buffer, <span style=color:#ff7b72>size_t</span> size) {
+</span></span><span style=display:flex><span>    FILE <span style=color:#ff7b72;font-weight:700>*</span>fp <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#d2a8ff;font-weight:700>popen</span>(cmd, <span style=color:#a5d6ff>&#34;r&#34;</span>);
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>if</span> (fp <span style=color:#ff7b72;font-weight:700>==</span> NULL) {
+</span></span><span style=display:flex><span>        <span style=color:#d2a8ff;font-weight:700>snprintf</span>(buffer, size, <span style=color:#a5d6ff>&#34;err&#34;</span>);
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>return</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>if</span> (<span style=color:#d2a8ff;font-weight:700>fgets</span>(buffer, size, fp) <span style=color:#ff7b72;font-weight:700>!=</span> NULL) {
+</span></span><span style=display:flex><span>        buffer[<span style=color:#d2a8ff;font-weight:700>strcspn</span>(buffer, <span style=color:#a5d6ff>&#34;</span><span style=color:#79c0ff>\n</span><span style=color:#a5d6ff>&#34;</span>)] <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>0</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#d2a8ff;font-weight:700>pclose</span>(fp);
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span><span style=color:#ff7b72>void</span> <span style=color:#d2a8ff;font-weight:700>get_file_value</span>(<span style=color:#ff7b72>const</span> <span style=color:#ff7b72>char</span> <span style=color:#ff7b72;font-weight:700>*</span>path, <span style=color:#ff7b72>char</span> <span style=color:#ff7b72;font-weight:700>*</span>buffer, <span style=color:#ff7b72>size_t</span> size) {
+</span></span><span style=display:flex><span>    FILE <span style=color:#ff7b72;font-weight:700>*</span>fp <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#d2a8ff;font-weight:700>fopen</span>(path, <span style=color:#a5d6ff>&#34;r&#34;</span>);
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>if</span> (fp <span style=color:#ff7b72;font-weight:700>==</span> NULL) {
+</span></span><span style=display:flex><span>        <span style=color:#d2a8ff;font-weight:700>snprintf</span>(buffer, size, <span style=color:#a5d6ff>&#34;N/A&#34;</span>);
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>return</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>if</span> (<span style=color:#d2a8ff;font-weight:700>fgets</span>(buffer, size, fp) <span style=color:#ff7b72;font-weight:700>!=</span> NULL) {
+</span></span><span style=display:flex><span>        buffer[<span style=color:#d2a8ff;font-weight:700>strcspn</span>(buffer, <span style=color:#a5d6ff>&#34;</span><span style=color:#79c0ff>\n</span><span style=color:#a5d6ff>&#34;</span>)] <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>0</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#d2a8ff;font-weight:700>fclose</span>(fp);
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#ff7b72>int</span> <span style=color:#d2a8ff;font-weight:700>main</span>() {
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>char</span> bat_status[<span style=color:#a5d6ff>16</span>] <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>&#34;&#34;</span>, bat_cap[<span style=color:#a5d6ff>8</span>] <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>&#34;&#34;</span>, bn_state[<span style=color:#a5d6ff>8</span>] <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>&#34;&#34;</span>, net_state[<span style=color:#a5d6ff>16</span>] <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>&#34;&#34;</span>, datetime[<span style=color:#a5d6ff>64</span>] <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>&#34;&#34;</span>;
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>char</span> mute_state[<span style=color:#a5d6ff>16</span>], volume[<span style=color:#a5d6ff>32</span>] <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>&#34;&#34;</span>, brightness[<span style=color:#a5d6ff>16</span>] <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>&#34;&#34;</span>;
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>int</span> counter <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>0</span>;
+</span></span><span style=display:flex><span>    <span style=color:#d2a8ff;font-weight:700>signal</span>(SIGRTMIN <span style=color:#ff7b72;font-weight:700>+</span> <span style=color:#a5d6ff>5</span>, handle_signal);
+</span></span><span style=display:flex><span>    <span style=color:#d2a8ff;font-weight:700>signal</span>(SIGRTMIN <span style=color:#ff7b72;font-weight:700>+</span> <span style=color:#a5d6ff>6</span>, handle_signal);
+</span></span><span style=display:flex><span>    <span style=color:#d2a8ff;font-weight:700>signal</span>(SIGRTMIN <span style=color:#ff7b72;font-weight:700>+</span> <span style=color:#a5d6ff>7</span>, handle_signal);
+</span></span><span style=display:flex><span>    <span style=color:#d2a8ff;font-weight:700>signal</span>(SIGRTMIN <span style=color:#ff7b72;font-weight:700>+</span> <span style=color:#a5d6ff>8</span>, handle_signal);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>while</span> (<span style=color:#a5d6ff>1</span>) {
+</span></span><span style=display:flex><span>        <span style=color:#d2a8ff;font-weight:700>get_file_value</span>(<span style=color:#a5d6ff>&#34;/sys/class/net/wlo1/operstate&#34;</span>, net_state, <span style=color:#ff7b72>sizeof</span>(net_state));
+</span></span><span style=display:flex><span>        <span style=color:#d2a8ff;font-weight:700>get_file_value</span>(<span style=color:#a5d6ff>&#34;/sys/class/power_supply/BAT0/status&#34;</span>, bat_status, <span style=color:#ff7b72>sizeof</span>(bat_status));
+</span></span><span style=display:flex><span>        <span style=color:#d2a8ff;font-weight:700>get_file_value</span>(<span style=color:#a5d6ff>&#34;/sys/class/power_supply/BAT0/capacity&#34;</span>, bat_cap, <span style=color:#ff7b72>sizeof</span>(bat_cap));
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>if</span> (update_mute) {
+</span></span><span style=display:flex><span>            <span style=color:#d2a8ff;font-weight:700>get_command_output</span>(<span style=color:#a5d6ff>&#34;pactl get-sink-mute @DEFAULT_SINK@&#34;</span>, mute_state, <span style=color:#ff7b72>sizeof</span>(mute_state));
+</span></span><span style=display:flex><span>            update_mute <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>0</span>;
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>if</span> (update_volume) {
+</span></span><span style=display:flex><span>            <span style=color:#d2a8ff;font-weight:700>get_command_output</span>(<span style=color:#a5d6ff>&#34;pactl get-sink-volume @DEFAULT_SINK@ | awk &#39;NR==1 {print $1, $5, $12}&#39;&#34;</span>, volume, <span style=color:#ff7b72>sizeof</span>(volume));
+</span></span><span style=display:flex><span>            update_volume <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>0</span>;
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>if</span> (update_brightness) {
+</span></span><span style=display:flex><span>            <span style=color:#d2a8ff;font-weight:700>get_command_output</span>(<span style=color:#a5d6ff>&#34;brightnessctl -m | cut -d &#39;,&#39; -f4&#34;</span>, brightness, <span style=color:#ff7b72>sizeof</span>(brightness));
+</span></span><span style=display:flex><span>            update_brightness <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>0</span>;
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>if</span> (update_bns) {
+</span></span><span style=display:flex><span>            <span style=color:#d2a8ff;font-weight:700>get_file_value</span>(<span style=color:#a5d6ff>&#34;/tmp/minsoehan.msh.9.d/mshbattnotionoff&#34;</span>, bn_state, <span style=color:#ff7b72>sizeof</span>(bn_state));
+</span></span><span style=display:flex><span>            update_bns <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>0</span>;
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>if</span> (counter <span style=color:#ff7b72;font-weight:700>%</span> <span style=color:#a5d6ff>2</span> <span style=color:#ff7b72;font-weight:700>==</span> <span style=color:#a5d6ff>0</span>) {
+</span></span><span style=display:flex><span>            <span style=color:#ff7b72>time_t</span> rawtime;
+</span></span><span style=display:flex><span>            <span style=color:#ff7b72>struct</span> tm <span style=color:#ff7b72;font-weight:700>*</span>timeinfo;
+</span></span><span style=display:flex><span>            <span style=color:#d2a8ff;font-weight:700>time</span>(<span style=color:#ff7b72;font-weight:700>&amp;</span>rawtime);
+</span></span><span style=display:flex><span>            timeinfo <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#d2a8ff;font-weight:700>localtime</span>(<span style=color:#ff7b72;font-weight:700>&amp;</span>rawtime);
+</span></span><span style=display:flex><span>            <span style=color:#d2a8ff;font-weight:700>strftime</span>(datetime, <span style=color:#ff7b72>sizeof</span>(datetime), <span style=color:#a5d6ff>&#34;%F %A %R - %I:%M %p&#34;</span>, timeinfo);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        <span style=color:#d2a8ff;font-weight:700>printf</span>(<span style=color:#a5d6ff>&#34;%s    %s    :%s    :%s    %s: %s%%    %s    %s *  </span><span style=color:#79c0ff>\n</span><span style=color:#a5d6ff>&#34;</span>, mute_state, volume, net_state, bn_state, bat_status, bat_cap, datetime, brightness);
+</span></span><span style=display:flex><span>        <span style=color:#d2a8ff;font-weight:700>fflush</span>(stdout);
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>unsigned</span> <span style=color:#ff7b72>int</span> sleep_time <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>5</span>;
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>while</span> (sleep_time <span style=color:#ff7b72;font-weight:700>&gt;</span> <span style=color:#a5d6ff>0</span> <span style=color:#ff7b72;font-weight:700>&amp;&amp;</span> <span style=color:#ff7b72;font-weight:700>!</span>update_mute <span style=color:#ff7b72;font-weight:700>&amp;&amp;</span> <span style=color:#ff7b72;font-weight:700>!</span>update_volume <span style=color:#ff7b72;font-weight:700>&amp;&amp;</span> <span style=color:#ff7b72;font-weight:700>!</span>update_brightness <span style=color:#ff7b72;font-weight:700>&amp;&amp;</span> <span style=color:#ff7b72;font-weight:700>!</span>update_bns) {
+</span></span><span style=display:flex><span>            sleep_time <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#d2a8ff;font-weight:700>sleep</span>(sleep_time);
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>        counter<span style=color:#ff7b72;font-weight:700>++</span>;
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>if</span> (counter <span style=color:#ff7b72;font-weight:700>&gt;=</span> <span style=color:#a5d6ff>2</span>) counter <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>0</span>;
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>return</span> <span style=color:#a5d6ff>0</span>;
+</span></span><span style=display:flex><span>}</span></span></code></pre></div></div><section data-pagefind-ignore><div class=categories-tags-container><div class=categories><span>Categories&ensp;</span>
+<span>&ensp;&bull;&#8202;</span>
+<a href=/categories/tech/>Tech</a>
+<span>&ensp;&bull;&#8202;</span>
+<a href=/categories/dash/>Dash</a>
+<span>&ensp;&bull;&#8202;</span>
+<a href=/categories/c/>C</a></div><div class=tags><span>Tags&ensp;</span>
+<span>&ensp;&bull;&#8202;</span>
+<a href=/tags/status/>Status</a>
+<span>&ensp;&bull;&#8202;</span>
+<a href=/tags/c/>C</a>
+<span>&ensp;&bull;&#8202;</span>
+<a href=/tags/dash/>Dash</a></div></div></section></article><aside><div class=aside-sidebar><div class=section-info><h2><a href=/tech/>Tech Notes</a></h2><a href=/tech/mshstatus/>mshstatus</a>
+<a href=/tech/awk/getting-started/>AWK Basic</a>
+<a href=/tech/pwa/>Progressive Web App (PWA)</a>
+<a href=/tech/image-processing/>Image Processing for Website</a>
+<a href=/tech/astro-notes/>Astro Notes</a>
+<a href=/tech/reset-local-repo/>Reset Local Repo to Match …</a>
+<a href=/tech/astro-blog-build/>Astro Blog Build</a>
+<a href=/tech/break-word-css/>CSS overflow-wrap: break-word</a>
+<a href=/tech/submit-data-to-google-form-via-custom-html-form/>Submit Data to Google Form via …</a>
+<a href=/tech/>MORE</a></div><div class=categories><h3><a href=/categories/>Categories</a></h3><a href=/categories/legal/>Legal (26)</a>
+<a href=/categories/labor-law/>Labor Law (23)</a>
+<a href=/categories/tech/>Tech (20)</a>
+<a href=/categories/linux/>Linux (5)</a>
+<a href=/categories/dev/>Dev (5)</a>
+<a href=/categories/open-diary/>Open Diary (3)</a>
+<a href=/categories>MORE</a></div><div class=tags><h3><a href=/tags/>Tags</a></h3><a href=/tags/leave-and-holiday/>Leave and Holiday (7)</a>
+<a href=/tags/osh/>Osh (4)</a>
+<a href=/tags/cloudflare/>Cloudflare (3)</a>
+<a href=/tags/system/>System (2)</a>
+<a href=/tags/public-holiday/>Public Holiday (2)</a>
+<a href=/tags/settlement-of-labor-dispute/>Settlement of Labor Dispute (2)</a>
+<a href=/tags/>MORE</a></div><div class=latest-posts><h3>Latest Posts</h3><a href=/others/human-and-windows/>လူနှင့် ပြတင်းပေါက်</a>
+<a href=/legal/labor-laws/public-holiday-and-negotiable-instrument-act/>အများပြည်သူ အလုပ်ပိတ်ရက်နှင့် လွှဲပြောင်းနိုင်သည့် စာချုပ်စာတမ်းများ အက်ဥပဒေ</a>
+<a href=/others/taxi-in-yangon/>Taxi Services in Yangon</a>
+<a href=/legal/labor-laws/closure-and-strike/>အလုပ်ပိတ်ခြင်းနှင့် သပိတ်မှောက်ခြင်း</a>
+<a href=/legal/labor-laws/settlement-of-labor-dispute/>အလုပ်သမားရေးရာ အငြင်းပွားမှု ဖြေရှင်းခြင်း</a>
+<a href=/legal/labor-laws/specially-relevant/>အထူးသက်ဆိုင်စေခြင်း</a>
+<a href=/legal/labor-laws/occupational-welfare/>လုပ်ငန်းခွင် သက်သာချောင်ချိရေး</a>
+<a href=/legal/labor-laws/occupational-safety/>လုပ်ငန်းခွင် ဘေးအန္တရာယ်ကင်းရှင်းရေး</a>
+<a href=/legal/labor-laws/occupational-health/>လုပ်ငန်းခွင် ကျန်းမာရေး</a></div></div></aside></div></main><footer><div class=wrapper><div class=left-box><a href=/>Min Soe Han</a></div><div class=right-box><p>&copy; All rights reserved by Min Soe Han</p></div></div></footer></body></html>
