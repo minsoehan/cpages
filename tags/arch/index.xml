@@ -5,7 +5,7 @@
 &lt;div class="code-header"&gt;
  &lt;div class="text"&gt;~&lt;/div&gt;
  &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
- &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[user@hostname ~]$ pacman -Qo pactl
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[user@hostname ~]$ pacman -Qo pactl
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;/usr/bin/pactl is owned by libpulse 17.0-3&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;And for it path,&lt;/p&gt;
@@ -15,7 +15,7 @@
 &lt;div class="code-header"&gt;
  &lt;div class="text"&gt;~&lt;/div&gt;
  &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
- &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[user@hostname ~]$ pacman -F pactl
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[user@hostname ~]$ pacman -F pactl
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;extra/libpulse 16.1-6 [installed: 17.0-3]
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; usr/bin/pactl
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; usr/share/bash-completion/completions/pactl&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;

@@ -6,7 +6,7 @@
 &lt;div class="code-header"&gt;
  &lt;div class="text"&gt;~&lt;/div&gt;
  &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
- &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# pacman -Sy archlinux-keyring &amp;amp;&amp;amp; pacman -Su&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# pacman -Sy archlinux-keyring &amp;amp;&amp;amp; pacman -Su&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;h3 id="failed-to-init-transaction-unable-to-lock-database"&gt;Failed to init transaction (unable to lock database)&lt;/h3&gt;
 &lt;p&gt;When pacman is about to alter the package database, for example installing a package, it creates a lock file at /var/lib/pacman/db.lck. This prevents another instance of pacman from trying to alter the package database at the same time. If pacman is interrupted while changing the database, this stale lock file can remain. If you are certain that no instances of pacman are running then delete the lock file:&lt;/p&gt;</description></item></channel></rss>

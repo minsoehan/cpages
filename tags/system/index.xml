@@ -6,7 +6,7 @@
 &lt;div class="code-header"&gt;
  &lt;div class="text"&gt;~&lt;/div&gt;
  &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
- &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# pacman -Sy archlinux-keyring &amp;amp;&amp;amp; pacman -Su&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# pacman -Sy archlinux-keyring &amp;amp;&amp;amp; pacman -Su&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;h3 id="failed-to-init-transaction-unable-to-lock-database"&gt;Failed to init transaction (unable to lock database)&lt;/h3&gt;
 &lt;p&gt;When pacman is about to alter the package database, for example installing a package, it creates a lock file at /var/lib/pacman/db.lck. This prevents another instance of pacman from trying to alter the package database at the same time. If pacman is interrupted while changing the database, this stale lock file can remain. If you are certain that no instances of pacman are running then delete the lock file:&lt;/p&gt;</description></item><item><title>What Package Provides What Command</title><link>https://minsoehan.com/tech/what-package-provides-what-command/</link><pubDate>Sun, 22 Jun 2025 19:22:44 +0630</pubDate><guid>https://minsoehan.com/tech/what-package-provides-what-command/</guid><description>&lt;p&gt;Sometime we just want to know which package is a command provided by? For instance, which package provides pactl command. Then use pacman in Arch Linux.&lt;/p&gt;
@@ -16,7 +16,7 @@
 &lt;div class="code-header"&gt;
  &lt;div class="text"&gt;~&lt;/div&gt;
  &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
- &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[user@hostname ~]$ pacman -Qo pactl
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[user@hostname ~]$ pacman -Qo pactl
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;/usr/bin/pactl is owned by libpulse 17.0-3&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;And for it path,&lt;/p&gt;
@@ -26,7 +26,7 @@
 &lt;div class="code-header"&gt;
  &lt;div class="text"&gt;~&lt;/div&gt;
  &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
- &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[user@hostname ~]$ pacman -F pactl
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[user@hostname ~]$ pacman -F pactl
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;extra/libpulse 16.1-6 [installed: 17.0-3]
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; usr/bin/pactl
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; usr/share/bash-completion/completions/pactl&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;

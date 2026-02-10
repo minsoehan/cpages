@@ -5,7 +5,7 @@
 &lt;div class="code-header"&gt;
  &lt;div class="text"&gt;datafile.txt&lt;/div&gt;
  &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
- &lt;div class="highlight" text="datafile.txt"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;orange 22.5 0
+ &lt;div class="highlight" text="datafile.txt"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;orange 22.5 0
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;banana 19.5 12
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;apple 23.0 0
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mango 25.0 30
@@ -18,7 +18,7 @@
 &lt;div class="code-header"&gt;
  &lt;div class="text"&gt;~&lt;/div&gt;
  &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
- &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;awk &lt;span style="color:#a5d6ff"&gt;&amp;#39;{print $1}&amp;#39;&lt;/span&gt; datafile.txt&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;awk &lt;span style="color:#a5d6ff"&gt;&amp;#39;{print $1}&amp;#39;&lt;/span&gt; datafile.txt&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Print the lines (the whole line, &lt;code&gt;$0&lt;/code&gt;) with value at third field is greater than 0.&lt;/p&gt;
 
@@ -27,6 +27,6 @@
 &lt;div class="code-header"&gt;
  &lt;div class="text"&gt;~&lt;/div&gt;
  &lt;div class="copy-code-below"&gt;&lt;i class="fa-solid fa-copy"&gt;&lt;/i&gt;&lt;/div&gt;
- &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;awk &lt;span style="color:#a5d6ff"&gt;&amp;#39;$3 &amp;gt; 0 {print $0}&amp;#39;&lt;/span&gt; datafile.txt&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;awk &lt;span style="color:#a5d6ff"&gt;&amp;#39;$3 &amp;gt; 0 {print $0}&amp;#39;&lt;/span&gt; datafile.txt&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;Do some maths &lt;strong&gt;&lt;em&gt;(value at second field is multiplied by value at third field)&lt;/em&gt;&lt;/strong&gt; and print.&lt;/p&gt;</description></item></channel></rss>

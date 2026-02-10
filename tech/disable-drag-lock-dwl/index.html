@@ -6,7 +6,7 @@
 <a href=/tech>tech</a>
 <span class=breadcrumbs-divider>></span>
 <span>disable-drag-lock-dwl</span></div><div class=page><article data-pagefind-body><h1>Disable Drag Lock DWL</h1><span class=material-symbols-outlined id=expand-right-onoff>expand_circle_right</span>
-<time datetime=2025-06-23T10:59:30+06:30>June 23, 2025</time><p>Disabling <code class=inline-code>drag_lock</code> function in dwl is recommended if you are experiencing half a second delay on releasing mouse button simulated by touchpad.</p><p>For example, it takes half a second for cursor to reset its shape after doing any drag action like moving or resizing window using touchpad.</p><p>To disable that behaviour, it is easy. Just disable static const int <code class=inline-code>drag_lock</code> function by setting its value to 0 in <code class=inline-code>config.h</code> file.</p><div class=code-header><div class=text>~</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#8b949e;font-style:italic>/* Trackpad */</span>
+<time datetime=2025-06-23T10:59:30+06:30>June 23, 2025</time><p>Disabling <code class=inline-code>drag_lock</code> function in dwl is recommended if you are experiencing half a second delay on releasing mouse button simulated by touchpad.</p><p>For example, it takes half a second for cursor to reset its shape after doing any drag action like moving or resizing window using touchpad.</p><p>To disable that behaviour, it is easy. Just disable static const int <code class=inline-code>drag_lock</code> function by setting its value to 0 in <code class=inline-code>config.h</code> file.</p><div class=code-header><div class=text>~</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#8b949e;font-style:italic>/* Trackpad */</span>
 </span></span><span style=display:flex><span><span style=color:#ff7b72>static</span> <span style=color:#ff7b72>const</span> <span style=color:#ff7b72>int</span> tap_to_click <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>1</span>;
 </span></span><span style=display:flex><span><span style=color:#ff7b72>static</span> <span style=color:#ff7b72>const</span> <span style=color:#ff7b72>int</span> tap_and_drag <span style=color:#ff7b72;font-weight:700>=</span> <span style=color:#a5d6ff>1</span>;
 </span></span><span style=display:flex><span><span style=color:#8b949e;font-style:italic>/* to disable the following drag_lock function, just set its value to 0. Default is 1. */</span>
@@ -24,27 +24,27 @@
 <span>&ensp;&bull;&#8202;</span>
 <a href=/tags/dwl/>Dwl</a>
 <span>&ensp;&bull;&#8202;</span>
-<a href=/tags/window-manager/>Window Manager</a></div></div></section></article><aside><div class=aside-sidebar><div class=section-info><h2><a href=/tech/>Tech Notes</a></h2><a href=/tech/mshstatus/>mshstatus</a>
+<a href=/tags/window-manager/>Window Manager</a></div></div></section></article><aside><div class=aside-sidebar><div class=section-info><h2><a href=/tech/>Tech Notes</a></h2><a href=/tech/mexii/>mexii</a>
+<a href=/tech/sway-perwindow-kb-layout/>Sway Per-window Keyboard …</a>
+<a href=/tech/mshstatus/>mshstatus</a>
 <a href=/tech/awk/getting-started/>AWK Basic</a>
 <a href=/tech/pwa/>Progressive Web App (PWA)</a>
 <a href=/tech/image-processing/>Image Processing for Website</a>
 <a href=/tech/astro-notes/>Astro Notes</a>
 <a href=/tech/reset-local-repo/>Reset Local Repo to Match …</a>
 <a href=/tech/astro-blog-build/>Astro Blog Build</a>
-<a href=/tech/break-word-css/>CSS overflow-wrap: break-word</a>
-<a href=/tech/submit-data-to-google-form-via-custom-html-form/>Submit Data to Google Form via …</a>
 <a href=/tech/>MORE</a></div><div class=categories><h3><a href=/categories/>Categories</a></h3><a href=/categories/legal/>Legal (26)</a>
 <a href=/categories/labor-law/>Labor Law (23)</a>
-<a href=/categories/tech/>Tech (20)</a>
-<a href=/categories/linux/>Linux (5)</a>
+<a href=/categories/tech/>Tech (22)</a>
 <a href=/categories/dev/>Dev (5)</a>
-<a href=/categories/open-diary/>Open Diary (3)</a>
+<a href=/categories/linux/>Linux (5)</a>
+<a href=/categories/web/>Web (3)</a>
 <a href=/categories>MORE</a></div><div class=tags><h3><a href=/tags/>Tags</a></h3><a href=/tags/leave-and-holiday/>Leave and Holiday (7)</a>
 <a href=/tags/osh/>Osh (4)</a>
+<a href=/tags/dash/>Dash (4)</a>
 <a href=/tags/cloudflare/>Cloudflare (3)</a>
-<a href=/tags/wages/>Wages (2)</a>
-<a href=/tags/employment-contract/>Employment Contract (2)</a>
-<a href=/tags/payment/>Payment (2)</a>
+<a href=/tags/astro/>Astro (2)</a>
+<a href=/tags/settlement-of-labor-dispute/>Settlement of Labor Dispute (2)</a>
 <a href=/tags/>MORE</a></div><div class=latest-posts><h3>Latest Posts</h3><a href=/others/human-and-windows/>လူနှင့် ပြတင်းပေါက်</a>
 <a href=/legal/labor-laws/public-holiday-and-negotiable-instrument-act/>အများပြည်သူ အလုပ်ပိတ်ရက်နှင့် လွှဲပြောင်းနိုင်သည့် စာချုပ်စာတမ်းများ အက်ဥပဒေ</a>
 <a href=/others/taxi-in-yangon/>Taxi Services in Yangon</a>
