@@ -3,12 +3,4 @@
 
 
 &lt;p class="space-one"&gt; &lt;/p&gt;
-&lt;p&gt;In the following scenario, the safest option is using &lt;code&gt;git pull --rebase&lt;/code&gt; or setting configuration by &lt;code&gt;git config pull.rebase true&lt;/code&gt;.&lt;/p&gt;
-&lt;h3 id="analysis-of-the-scenario"&gt;Analysis of the scenario&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;Current state on Remote:&lt;br&gt;
-file &lt;em&gt;aaa.txt&lt;/em&gt; exits and file &lt;em&gt;bbb.txt&lt;/em&gt; does not exist yet.&lt;/li&gt;
-&lt;li&gt;Current state on Local:&lt;br&gt;
-file &lt;em&gt;aaa.txt&lt;/em&gt; does not exist and file &lt;em&gt;bbb.txt&lt;/em&gt; has been created.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;In above scenario and local repository on the computer, git push will fail with the following message:&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;In the following scenario, the safest option is using &lt;code&gt;git pull --rebase&lt;/code&gt; or setting configuration by &lt;code&gt;git config pull.rebase true&lt;/code&gt;.&lt;/p&gt;</description></item></channel></rss>
