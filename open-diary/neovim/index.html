@@ -58,7 +58,19 @@
 </span></span><span style=display:flex><span>vim.keymap.set(<span style=color:#a5d6ff>&#39;n&#39;</span>, <span style=color:#a5d6ff>&#39;&lt;S-Space&gt;&#39;</span>, <span style=color:#a5d6ff>&#39;&lt;C-w&gt;w&#39;</span>)
 </span></span><span style=display:flex><span>vim.keymap.set(<span style=color:#a5d6ff>&#39;n&#39;</span>, <span style=color:#a5d6ff>&#39;&lt;C-Space&gt;&#39;</span>, <span style=color:#a5d6ff>&#39;&lt;Cmd&gt;bnext&lt;CR&gt;&#39;</span>)
 </span></span><span style=display:flex><span>vim.keymap.set(<span style=color:#a5d6ff>&#39;n&#39;</span>, <span style=color:#a5d6ff>&#39;&lt;C-S-Space&gt;&#39;</span>, <span style=color:#a5d6ff>&#39;&lt;Cmd&gt;bprevious&lt;CR&gt;&#39;</span>)
-</span></span><span style=display:flex><span>vim.keymap.set(<span style=color:#a5d6ff>&#39;n&#39;</span>, <span style=color:#a5d6ff>&#39;&lt;leader&gt;n&#39;</span>, <span style=color:#a5d6ff>&#39;&lt;C-w&gt;w&#39;</span>)</span></span></code></pre></div></div><p>Autocompletion အတွက်ကိုတော့ built-in တွေကိုပဲ သုံးဖို့ ဆုံးဖြတ်လိုက်တယ်။ Language Server Protocol (LSP) ကိုကြတော့ အနည်းဆုံး <a href=https://github.com/neovim/nvim-lspconfig>lspconfig</a> plugin ကို install မှပဲ အဆင်ပြေတယ်။ programming language တစ်ခုချင်းစီအတွက် <code>vim.lsp.config({...})</code> တစ်ခုစီ လုပ်မနေနိုင်။ Autocompletion နဲ့ LSP အတွက် နောက်စာမျက်နှာတစ်ခု သပ်သပ်ရေးမှ အဆင်ပြေမယ်။</p><section data-pagefind-ignore><div class=categories-tags-container><div class=categories><span>Categories&ensp;</span>
+</span></span><span style=display:flex><span>vim.keymap.set(<span style=color:#a5d6ff>&#39;n&#39;</span>, <span style=color:#a5d6ff>&#39;&lt;leader&gt;n&#39;</span>, <span style=color:#a5d6ff>&#39;&lt;C-w&gt;w&#39;</span>)</span></span></code></pre></div></div><p>နောက်တစ်ခုက buffer delete ပြဿနာ။ <code>:bd</code> နဲ့ ဖျက်တဲ့အခါ ရှိနေတဲ့ window layout ပျက်သွားတယ်။ အဲ့ဒါကြောင့် <a href=https://github.com/famiu/bufdelete.nvim>bufdelete</a> လို plugin မျိုး ရှိနေတာဖြစ်တယ်။ အမှန်တော့ buffer delete ပြဿနာအတွက် usercmd တစ်ခုရေးထားရုံနဲ့တင် လုံလောက်သင့်တယ်။ အခြေခံအားဖြင့် buffer delete မလုပ်ခင် buffer number ကိုမှတ်၊ ပြီးတော့ <code>:bnext</code> လုပ်ကြည့်လိုက်၊ မရရင် ဖျက်ချင်တဲ့ buffer ဟာ သက်ဆိုင်ရာ window မှာ နောက်ဆုံးတစ်ခုဖြစ်လို့ အခြားတစ်ဖက်မှာ window တစ်ခုရှိနေရင် ပုံစံချထားတဲ့ window layout ပျက်တော့မယ်။ ဒါကြောင့် scratch buffer တစ်ခု ဖန်တီးပြီး အစားထိုး၊ ပြီးတော့မှ ဖျက်ချင်တာကို ဖျက်။ usercmd နမူနာက အောက်မှာ။</p><div class=code-header><div class=text>~</div><div class=copy-code-below><i class="fa-solid fa-copy"></i></div><div class=highlight><pre tabindex=0 style=color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-lua data-lang=lua><span style=display:flex><span>vim.api.nvim_create_user_command(<span style=color:#a5d6ff>&#39;Bdelete&#39;</span>, <span style=color:#ff7b72>function</span>()
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>local</span> buf <span style=color:#ff7b72;font-weight:700>=</span> vim.api.nvim_get_current_buf()
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>if</span> vim.bo[buf].modified <span style=color:#ff7b72>then</span>
+</span></span><span style=display:flex><span>        vim.notify(<span style=color:#a5d6ff>&#39;Buffer has unsaved changes&#39;</span>, vim.log.levels.WARN)
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>end</span>
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>local</span> win <span style=color:#ff7b72;font-weight:700>=</span> vim.api.nvim_get_current_win()
+</span></span><span style=display:flex><span>    vim.cmd(<span style=color:#a5d6ff>&#39;bnext&#39;</span>)
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>if</span> buf <span style=color:#ff7b72;font-weight:700>==</span> vim.api.nvim_get_current_buf() <span style=color:#ff7b72>then</span>
+</span></span><span style=display:flex><span>        <span style=color:#ff7b72>local</span> scratch <span style=color:#ff7b72;font-weight:700>=</span> vim.api.nvim_create_buf(<span style=color:#79c0ff>true</span>, <span style=color:#79c0ff>false</span>)
+</span></span><span style=display:flex><span>        vim.api.nvim_win_set_buf(win, scratch)
+</span></span><span style=display:flex><span>    <span style=color:#ff7b72>end</span>
+</span></span><span style=display:flex><span>    vim.cmd(<span style=color:#a5d6ff>&#39;bdelete &#39;</span> <span style=color:#ff7b72;font-weight:700>..</span> buf)
+</span></span><span style=display:flex><span><span style=color:#ff7b72>end</span>, {})</span></span></code></pre></div></div><p>Autocompletion အတွက်ကိုတော့ built-in တွေကိုပဲ သုံးဖို့ ဆုံးဖြတ်လိုက်တယ်။ Language Server Protocol (LSP) ကိုကြတော့ အနည်းဆုံး <a href=https://github.com/neovim/nvim-lspconfig>lspconfig</a> plugin ကို install မှပဲ အဆင်ပြေတယ်။ programming language တစ်ခုချင်းစီအတွက် <code>vim.lsp.config({...})</code> တစ်ခုစီ လုပ်မနေနိုင်။ Autocompletion နဲ့ LSP အတွက် နောက်စာမျက်နှာတစ်ခု သပ်သပ်ရေးမှ အဆင်ပြေမယ်။</p><section data-pagefind-ignore><div class=categories-tags-container><div class=categories><span>Categories&ensp;</span>
 <span>&ensp;&bull;&#8202;</span>
 <a href=/categories/open-diary/>Open Diary</a>
 <span>&ensp;&bull;&#8202;</span>
@@ -74,15 +86,15 @@
 <a href=/open-diary/>MORE</a></div><div class=categories><h3><a href=/categories/>Categories</a></h3><a href=/categories/tech/>Tech (28)</a>
 <a href=/categories/legal/>Legal (26)</a>
 <a href=/categories/labor-law/>Labor Law (23)</a>
-<a href=/categories/linux/>Linux (6)</a>
 <a href=/categories/dev/>Dev (6)</a>
+<a href=/categories/linux/>Linux (6)</a>
 <a href=/categories/open-diary/>Open Diary (5)</a>
 <a href=/categories>MORE</a></div><div class=tags><h3><a href=/tags/>Tags</a></h3><a href=/tags/leave-and-holiday/>Leave and Holiday (7)</a>
 <a href=/tags/dash/>Dash (5)</a>
-<a href=/tags/astro/>Astro (4)</a>
 <a href=/tags/osh/>Osh (4)</a>
-<a href=/tags/cloudflare/>Cloudflare (3)</a>
+<a href=/tags/astro/>Astro (4)</a>
 <a href=/tags/script/>Script (3)</a>
+<a href=/tags/cloudflare/>Cloudflare (3)</a>
 <a href=/tags/>MORE</a></div><div class=latest-posts><h3>Latest Posts</h3><a href=/tech/nvim/>Neovim</a>
 <a href=/others/breadcrumbs/>Breadcrumbs</a>
 <a href=/tech/google-sheets-uuid/>Generate UUID Google Sheets</a>
